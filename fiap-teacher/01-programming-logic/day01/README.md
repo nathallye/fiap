@@ -61,9 +61,9 @@
   - [x] NodeJS - Não é uma linguagem de programação, é um ambiente para rodar JavaScript no servidor web.
     - [x] Nginx para rodar aplicações NodeJS. Ainda precisamos de um servidor web, para rodar o nodeJS.
 
-- [x] **Hardware vs Software**
-  - [x] Hardware Físico e difícil de mudar
-  - [x] Software Virtual e deve ser de fácil mudança.
+- [x] **Hardware vs Software:**
+  - [x] Hardware: Físico e difícil de mudar.
+  - [x] Software: Virtual e deve ser de fácil mudança.
 
 - [x] **Instalar o VSCode.**
 
