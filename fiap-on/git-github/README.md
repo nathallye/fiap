@@ -13,11 +13,9 @@ Hoje em dia, saber como usar o GIT virou uma habilidade fundamental para todo de
 Não, o GitHub é uma famosa rede social de compartilhamentos de código, é um repositório de códigos fontes que podem ser privados ou abertos, de desenvolvedores iniciantes até grandes empresas. 
 O GitHub foi criado em 2008 e comprado pela Microsoft 10 anos mais tarde.
 
-
 ## GIT
 
 - Repositório distribuido: Não depende do servidor para salvar uma alteração. Por exemplo, se cair a internet, podemos salvar "comitar" as alterações e quando a internet voltar aí sim enviamos para o repositório central(GitHub ou GitLab) onde todos da equipe tem acesso  e podem baixar essas atualizações.
-
 
 ### Configurando o Git
 
