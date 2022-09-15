@@ -131,8 +131,8 @@
 
 ## Próxima aula
 
-- [ ]  NodeJS, NPM, Yarn
-- [ ]  Estrutura de Dados
-- [ ]  Estruturas de controle
-- [ ]  Laços de repetição
-- [ ]  Funções    
+- [ ] NodeJS, NPM, Yarn
+- [ ] Estrutura de Dados
+- [ ] Estruturas de controle
+- [ ] Laços de repetição
+- [ ] Funções    
