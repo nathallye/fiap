@@ -94,7 +94,7 @@
   -[x] Vamos criar o arquivo descritor do node `package.json` que armazena a declaração das dependências do projeto que evita a instalação novamente de todas as dependências/módulos manualmente se por ventura trocarmos de máquina ou enviarmos esse projeto para outra pessoa, podendo serem instaladas através desse arquivo usando o comando `npm install`. E para criarmos esse arquivo vamos rodar o comando seguinte no terminal:
 
     ```
-      npm init -y
+    npm init -y
     ```
     -[x] **Obs.:** -y - É para responder todas as perguntas dessa inicialização de forma padrão.
 
@@ -110,23 +110,23 @@
     - [x] Rodamos o comando seguinte:
 
       ``` 
-        tsc src/main.ts
-            [diretorio/file_name]
+      tsc src/main.ts
+          [diretorio/file_name]
       ```
 
   - [x] Executando o arquivo JS gerado no servidor node
     - [x] Rodamos o comando seguinte:
 
       ``` 
-        node src/main.js
-             [diretorio/file_name]
+      node src/main.js
+           [diretorio/file_name]
       ```
 
   - [x] Configurar `.tsconfig` o TypeScript
     - [x] Rodamos o comando seguinte:
 
       ``` 
-        tsc --init
+      tsc --init
       ```
 
 ## Próxima aula
