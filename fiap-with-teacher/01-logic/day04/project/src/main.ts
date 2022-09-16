@@ -89,3 +89,12 @@ for (let x: number = 0; x <= 10; x++) {
 // ++x - Operador incremental - pré incremento
 // x-- - Operador decremental - pós decremento
 // --x - Operador decremental - pré decremento
+
+console.log("-----------------------------------------------------")
+
+for (let a: number = 10; a <=20; a++) {
+  if (a >= 12 && a < 18) {
+    continue;
+  }
+  console.log(a);
+}
