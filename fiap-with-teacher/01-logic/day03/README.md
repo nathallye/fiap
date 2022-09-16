@@ -22,27 +22,27 @@
   - [x] regex
   - [x] “copo d\’água”
   - [x] email
-    - [x] /^[a-z0-9._]+@[a-z0-9._]\.([a-z]+)?$/i;
-    - [x] / / - representa o início e o fim ou seja, delimitadores.
-    - [x] / /i; - i representa case insensitive. Ponto e virgula para finalizar(;) 
-    - [x] /^ $/i; - dentro dos delimitadores comece com ^ e termine com $
-    - [x] /^[a-z0-9._]$/i; - entre colchetes[] informamos que o préfixo/inicio do e-mail tem que ter ao menos uma letra de a à z, e/ou um número de 0 à 9, e/ou um caracter _ e . 
-    - [x] /^[a-z0-9._]+@$/i; - +@ obrigatóriamente tem que ter um arroba(o + informa que estamos juntando, ou seja, o prefixo com o @)
-    - [x] /^[a-z0-9._]+@[a-z0-9._]$/i; - depois do arroba entre colchetes[] informamos que deve ter ao menos uma letra de a à z, e/ou um número de 0 à 9, e/ou um caracter _ e . 
-    - [x] /^[a-z0-9._]+@[a-z0-9._]\.$/i; - \. a contra barra é o escape para que o elemento (.) seja lido de forma literal(com o uso do \ não precisamos do +, ele já faz esse trabalho de juntar)
-    - [x] /^[a-z0-9._]+@[a-z0-9._]\.([a-z]+)?$/i; - [a-z] depois do (.) pode ao menos uma letra de a à z e depois deles pode ter mais(+) elementos, no entanto é opcional(?)
+    - [x] `/^[a-z0-9._]+@[a-z0-9._]\.([a-z]+)?$/i;`
+    - [x] `/ /` - representa o início e o fim ou seja, delimitadores.
+    - [x] `/ /i;` - i representa case insensitive. Ponto e virgula para finalizar(;)
+    - [x] `/^ $/i;` - dentro dos delimitadores comece com ^ e termine com $
+    - [x] `/^[a-z0-9._]$/i;` - entre colchetes[] informamos que o préfixo/inicio do e-mail tem que ter ao menos uma letra de a à z, e/ou um número de 0 à 9, e/ou um caracter _ e . 
+    - [x] `/^[a-z0-9._]+@$/i;` - `+@` obrigatóriamente tem que ter um arroba(o + informa que estamos juntando, ou seja, o prefixo com o @)
+    - [x] `/^[a-z0-9._]+@[a-z0-9._]$/i;` - depois do arroba entre colchetes[] informamos que deve ter ao menos uma letra de a à z, e/ou um número de 0 à 9, e/ou um caracter _ e . 
+    - [x] `/^[a-z0-9._]+@[a-z0-9._]\.$/i;` - `\.` a contra barra é o escape para que o elemento (.) seja lido de forma literal(com o uso do \ não precisamos do +, ele já faz esse trabalho de juntar)
+    - [x] `/^[a-z0-9._]+@[a-z0-9._]\.([a-z]+)?$/i;` - `[a-z]` depois do (.) pode ao menos uma letra de a à z e depois deles pode ter mais(+) elementos, no entanto é opcional(?)
 
   - [x] CEP
-    - [x] /^[0-9]{5}\-[0-9]{3}$/;
+    - [x] `/^[0-9]{5}\-[0-9]{3}$/;`
     - [x] Ex. 01311-100
 
   - [x] CPF
     - [x] Ex. 123.123.123-30
-    - [x] /^[0-9]{3}\.[0-9]{3}\.[0-9]{3}\-[0-9]{2}$/;
+    - [x] `/^[0-9]{3}\.[0-9]{3}\.[0-9]{3}\-[0-9]{2}$/;`
 
   - [x] ? - opcional
   - [x] / representa o início e o fim ou seja. delimitadores.
-  - [x] caseInsensitive. tanto faz maiúsculas ou minúsculas. representado pela letra i
+  - [x] caseInsensitive. tanto faz maiúsculas ou minúsculas. representado pela letra `i`
   - [x] ^ - comece com
   - [x] $ - termine com
   - [x] /i; - insensitive
