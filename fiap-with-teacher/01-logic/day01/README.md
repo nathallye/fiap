@@ -23,7 +23,8 @@
 - [x] **Lógica de Programação:** É como pensa ou deve pensar um programador. Sequência de instruções para escrever um programa de computador, com o objetivo de resolver um problema.
   - [x] Visão Macro: Panorama da idéia, o que a aplicação deve fazer. Visão do todo. Ex.: Um Ecommerce tem quer ter uma tela de autênticação, catálogo de produtos, carrinho de compras...
   - [x] Visão Micro: A divisão do programa em partes para construção. MPV.
-
+    - [x] Cuidado com as armadilhas desse panorama: Ser muito superficial e não prestar atenção à detalhes importantes ou ser excessivamente detalhista. 
+  
 - [x] **Estrutura de um programa:** Quando estamos escrevendo um programa, seja ele pequeno ou grande, precisamos construir uma sequência de passos para resolver o problema, que nada mais é que o conceito de `Algoritmo`.
 
 - [x] **Tipos de software:**
