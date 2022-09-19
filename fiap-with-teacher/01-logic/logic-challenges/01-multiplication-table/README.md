@@ -1,13 +1,15 @@
-# FIAP
-Studies on Programming Logic with TypeScript, HTML5, CC3, JavaScript, Node.js and React.js
-  
-- ## [FIAP with teacher: Synchronous Content](fiap-with-teacher/README.md)
-  - ### [Logic](fiap-with-teacher/01-logic/README.md)
-    - #### [Day01](fiap-with-teacher/01-logic/day01/README.md)
-    - #### [Day02](fiap-with-teacher/01-logic/day02/README.md)
-    - #### [Day03](fiap-with-teacher/01-logic/day03/README.md)
-    - #### [Day04](fiap-with-teacher/01-logic/day04/README.md)
-    
-    - ### [Logic Challenges](fiap-with-teacher/01-logic/logic-challenges/README.md)
-      - #### [Multiplication Table](fiap-with-teacher/01-logic/logic-challenges/01-multiplication-table/README.md)
-      - #### [Regular Expressions](fiap-with-teacher/01-logic/logic-challenges/02-regular-expressions/README.md)
+# Logic Challenges
+
+## Multiplication Table
+
+``` TS
+// Desafio 1: Construção da Tabuada de 1 a 10. O resultado deve ser exibido no console do terminal do VSCode.
+
+for (let x: number = 1; x <= 10; x++) {
+  console.log(`Tabuada do ${x}:`);
+  for (let y: number = 1; y <= 10; y++) {
+    console.log(`${x} x ${y} = ${x*y}`)
+  } 
+  console.log("----------------");
+}
+```
