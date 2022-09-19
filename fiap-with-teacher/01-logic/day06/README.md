@@ -163,21 +163,78 @@
             const employee = new Person("Nathallye", 22);
             ```
 
-        - [ ] encapsulamento
-    
-
     - [x] **Framework x Biblioteca**
       - [x] Framework - Conjunto de padrões, precisa ser respeitado. Seu código segue o Framework
       - [x] Biblioteca - É um conjunto de códigos progressivo e extensível, pode ser aplicado ao seu projeto ou não.
       - [x] React é uma biblioteca ou framework? Sim Biblioteca, porém quando usamos o nome React, também refere-se a o inteiro ecossistema React (React Router, Jest, Redux(Context API), React Native, Electron, NextJS, Gatsby)
-    
-    — Opcional
-    - [ ] herança
-    - [ ] get & set
-  
-    - [ ]  Estrutura de Dados
-    - [x]  [hackerrank.](https://www.hackerrank.com/)com
 
+  - [x] **Desafio da aula:**
+    - [x] /src/Funcionario
+      - [x] nome:string, ri:string, cpf:string
+
+        ``` TS
+        class Employee{
+          name: string;
+          ri: string;
+          cpf: string;
+        }
+
+        export default Employee;
+        ```
+
+    - [x] constructor
+      - [x] inicializar os atributos
+
+        ``` TS
+        class Employee{
+          name: string;
+          ri: string;
+          cpf: string;
+
+          constructor(paramName: string, paramRi: string, paramCpf: string){
+            this.name = paramName;
+            this.ri = paramRi;
+            this.cpf = paramCpf;
+          }
+        }
+
+        export default Employee;
+        ```
+
+    - [x] cadFuncionario
+      - [x] console.log('Funcionário Fulano cadastrado com sucesso!');
+
+        ``` TS
+        class Employee{
+          name: string;
+          ri: string;
+          cpf: string;
+
+          constructor(paramName: string, paramRi: string, paramCpf: string){
+            this.name = paramName;
+            this.ri = paramRi;
+            this.cpf = paramCpf;
+          }
+
+          regisEmployee(){
+            console.log(`O funcionário ${this.name} cadastrado com sucesso.`)
+          }
+        }
+
+        export default Employee;
+        ```
+
+    - [x] src/poo_func.ts
+
+      ``` TS
+      import Employee from "./Employee";
+
+      const employee = new Employee("Nathallye", "123456", "039.000.111-22");
+      employee.regisEmployee();
+      ```
+      
 ## Próxima aula
 
-  - [ ] 
+  - [ ] encapsulamento
+  - [ ] herança
+  - [ ] get & set
