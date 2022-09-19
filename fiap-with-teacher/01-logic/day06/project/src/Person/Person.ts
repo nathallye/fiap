@@ -1,0 +1,22 @@
+class Person{
+  // atributos ou propriedades
+  name: string;
+  age: number;
+
+  // métodos
+  /*
+  walk(paramName: string, paramAge: number):void{
+    this.name = paramName; // atributo name recebe o que foi passado para o paramName do método
+    this.age = paramAge; // atributo age recebe o que foi passado para o paramAge do método
+    console.log(`A pessoa ${this.name} de idade ${this.age} está andando.`);
+  }
+  */
+
+  constructor(paramName: string, paramAge: number){
+    this.name = paramName;
+    this.age = paramAge;
+    console.log(`A pessoa ${this.name} de ${this.age} anos de idade está andando.`);
+  }
+}
+
+export default Person;

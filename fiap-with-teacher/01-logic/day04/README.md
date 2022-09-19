@@ -11,13 +11,13 @@
     ```
     -[x] **Obs.:** -y - É para responder todas as perguntas dessa inicialização de forma padrão.
 
-  - [x] Observações sobre o `packge.json`:
-    - [x] É o arquivo de configuração do nosso projeto
-      - [x] name: o nome do projeto não pode ser muito comum
-      - [x] version: 
-        - [x] versão Maior(`MAJOR`): quando fizer mudanças incompatíveis na API,
-        - [x] versão Menor(`MINOR`): quando adicionar funcionalidades mantendo compatibilidade, e
-        - [x] versão de Correção(`PATCH`): quando corrigir falhas mantendo compatibilidade. Rótulos adicionais para pré-lançamento(pre-release) e metadados de construção(build) estão disponíveis como extensão ao formato MAJOR.MINOR.PATCH.
+    - [x] Observações sobre o `packge.json`:
+      - [x] É o arquivo de configuração do nosso projeto
+        - [x] name: o nome do projeto não pode ser muito comum
+        - [x] version: 
+          - [x] versão Maior(`MAJOR`): quando fizer mudanças incompatíveis na API,
+          - [x] versão Menor(`MINOR`): quando adicionar funcionalidades mantendo compatibilidade, e
+          - [x] versão de Correção(`PATCH`): quando corrigir falhas mantendo compatibilidade. Rótulos adicionais para pré-lançamento(pre-release) e metadados de construção(build) estão disponíveis como extensão ao formato MAJOR.MINOR.PATCH.
 
   - [x] **Convertendo um arquivo TS para JS**
     - [x] Rodamos o comando seguinte:
@@ -35,7 +35,7 @@
            [diretorio/file_name]
       ```
 
-  - [x] **Configurar `.tsconfig` do TypeScript: Para não precisarmos rodar o comando para compilar o arquivo manualmente a cada alteração**
+  - [x] **Configurar `.tsconfig` do TypeScript(para não precisarmos rodar o comando para compilar o arquivo manualmente a cada alteração):**
     - [x] Rodamos o comando seguinte:
 
       ``` 
@@ -163,4 +163,4 @@
     ```
 
 ## Assuntos prova 
-  - [ ] Paradigmas, variaveis e tipode de dados, estrutura de repeticao, estrutura condicional, e operados logicos e relacionais;
+  - [x] Paradigmas, variaveis e tipode de dados, estrutura de repeticao, estrutura condicional, e operados logicos e relacionais;
