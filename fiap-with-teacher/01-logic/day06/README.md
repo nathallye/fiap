@@ -47,7 +47,7 @@
 
             ``` 
             node dist/main.js
-                [diretorio/file_name]
+                 [file_folder/file_name]
             ```
 
       - [x] **Instalando o nodemon e excutando**
@@ -61,6 +61,7 @@
       
             ```
             nodemon dist/main.js 
+                    [file_folder/file_name]
             ```
           
     - [x] **Classe**
