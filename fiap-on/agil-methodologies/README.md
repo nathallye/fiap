@@ -12,7 +12,7 @@ A base para elaboração desse manifesto ágil considera que os requisitos não 
   - Colaboração do cliente, cliente sempre presente no projeto, validando as entregas, stakeholders, em vez de negociação de contratos.
   - Boa aceitação e boa resposta às modificações, serem encaradas como oportunidade, em vez de seguir um plano.
 
-### Princípios ágeis
+### Princípios ágeis (ágil não é fazer rápido, é fazer com qualidade e no melhor prazo)
 
 1. **Satisfação do cliente por meio de entrega contínua:** ao avaliar o produto durante todo o projeto, o cliente percebe a evolução e verifica a qualidade dos produtos.
 
@@ -64,8 +64,10 @@ O gestor passa mais a ser um facilitador do que alguém que diz o que fazer, man
 Olhar o time como uma extensão do projeto, não pessoas que eu tenho que gerênciar.
 Facilita a comunicação entre a equipe e os stakeholders.
 
-## Gestão de projetos com SCRUM
+## Papéis do SCRUM
 Se um falhar todos irão falar(nome uma das jogadas mais famosas de Rugby).
+
+SCRUM é um framework de gestão de projetos, não uma metodologia. O SCRUM não é uma metodologia porque ele não diz como fazer e sim o que deve ser feito.
 
 O framework SCRUM é um dos mais utilizados para projetos ágeis. Utiliza um processo incremental e iterativo que produz partes do projeto de forma constante, contendo funções definidas e priorizadas pelo cliente, que faz o aceite de cada entrega produzida em períodos de duas a quatro semanas.
 
@@ -73,8 +75,33 @@ O SCRUM está fundamentado nas questões ágeis do cliente como parte da equipe,
 
 No SCRUM, além da existência das atividades que devem ser realizadas durante o processo de construção, há uma definição clara de papéis que deve ser observada e respeitada. Esses papéis são:
 
-  1. **Scrum Master:** Exerce a função do gerente de projetos, porém com a ação de facilitador entre a equipe e o cliente. Suas funções básicas são proteger o relacionamento com o cliente, resolver os problemas que ocorrem durante o projeto, manter a equipe focada na execução do sprint e garantir o uso correto das regras SCRUM.
+  1. **Scrum Master:** Exerce a função do gerente de projetos, porém com a ação de facilitador entre a equipe e o cliente. Suas funções básicas são proteger o relacionamento com o cliente, resolver os problemas que ocorrem durante o projeto, manter a equipe focada na execução do sprint e garantir o uso correto das regras SCRUM. Facilitador do projeto. Guiar o time. Remove os impedimentos durante a execução projeto para o time. Define junto com o PO o que deve ser feito.
 
-  2. **Product Owner (PO):** É o representante do cliente no projeto. Deve ter conhecimento e autonomia para decidir e validar os produtos produzidos pelo projeto, conhecer as necessidades do cliente e convocar outros usuários para ajudar na definição dos requisitos. 
+  2. **Product Owner (PO):** É o representante do cliente no projeto. Deve ter conhecimento e autonomia para decidir e validar os produtos produzidos pelo projeto, conhecer as necessidades do cliente e convocar outros usuários para ajudar na definição dos requisitos. Representante do cliente. Papel do cliente. "Dono do projeto". Define junto com o Scrum Master o que deve ser feito.
   
-  3. **Time:** São as pessoas que realizam a construção do software. A equipe deve ser multidisciplinar e autogerenciada para gerar os produtos com alta qualidade para o cliente. Além disso, são responsáveis por definir o prazo e as metas dos sprints.
+  3. **Time:** São as pessoas que realizam a construção do software(programador, ux, tester, front-end, back-end... todos são o time). A equipe deve ser multidisciplinar e autogerenciada para gerar os produtos com alta qualidade para o cliente. Além disso, são responsáveis por definir o prazo e as metas dos sprints. Como fazer o que deve ser feito.
+
+## Características do SCRUM
+
+Caso tenha uma alteração a ser feita, será incluida na próxima sprint.
+Caso não tenham concluido as atividades da sprint atual, para até onde foi feito e o que falta é incluido na próxima sprint.
+
+  1. **Product backlog(Responsável é o PO):** O product backlog é um `documento` elaborado pelo Product Owner que define o que deverá ser feito no projeto, ou seja, `define o escopo inicial do projeto`. Deve ser elaborado em formato de uma `lista das necessidades funcionais e não funcionais` que representem as necessidades do negócio, tais como: requisitos, documentação, diagramas, requisitos técnicos, erros, entre outros. Não é um documento estático, sendo atualizado durante todo o processo de construção pelo Product Owner para incluir mudanças que podem ocorrer no projeto.
+
+  2. **Reunião de planejamento:** É uma `reunião que deve ser realizada antes de cada Sprint`, com o objetivo de priorizar o que será construído, estimar a duração do Sprint e detalhar as atividades que precisam ser executadas para gerar o produto. `Todos os membros do projeto participam`. 
+
+  3. **Product backlog priorizado:** Gerado a partir do product backlog pelo Product Owner (PO), com a ajuda do Scrum Master, para `definir a prioridade` dos requisitos listados inicialmente. Essa lista priorizada é a base para o PO definir quais são as `funcionalidades que farão parte dos sprints`. Planning Poker.
+
+  4. **Sprint backlog:** A partir da `lista priorizada de funcionalidades e da seleção daquelas que devem fazer parte do sprint`, a equipe deve fazer uma análise do que foi solicitado junto ao PO para poder estimar o prazo do sprint e definir quais são as atividades necessárias para construir o projeto. É com base nessa estimativa que serão definidos os objetivos do sprint. 8h para uma sprint de 4 semanas. 6h para uma sprint de 3 semanas. 4h para uma sprint de 2 semanas.
+
+  5. **Sprint:** É a `fase de implementação das funcionalidades previstas no sprint backlog`. Tem duração predeterminada de 2 a 4 semanas e não pode ser estendido de forma alguma. Ao final, deve ter concluído todo o projeto com qualidade. Diferente dos processos tradicionais, o SCRUM faz entregas constantes de partes do projeto.
+
+  6. **Reunião diária:** Diariamente, o Scrum Master, junto com o time, realiza uma reunião breve, no local de trabalho, com duração máxima de 15 minutos. O objetivo dessa reunião é `acompanhar as atividades que estão sendo realizadas e verificar se existem problemas ou impedimentos que afetem a duração do sprint`. De forma alguma deve ser uma reunião para busca de culpados ou de acusações, o foco é a colaboração de todos.
+
+  7. **Reunião de revisão:** Após a `conclusão de um Sprint`, deve ser realizada uma reunião para `apresentar o resultado do trabalho ao PO e demais envolvidos`. O time é o responsável pela apresentação que deve ser feita com o produto funcionando, realizando suas funções. Ao final, os envolvidos podem fazer a sua avaliação e definir se o Sprint será aceito. Eventuais apontamentos de erros e melhorias devem ser inseridos no product backlog.
+
+  8. **Reunião de retrospectiva:** É uma `reunião de lições aprendidas do time`, conduzida pelo Scrum Master, na qual são discutidos os pontos positivos e negativos durante a execução do sprint, com o objetivo de melhorar o desempenho dos próximos sprints. Eventualmente, o PO pode participar dessa reunião.
+
+    - **Versão:** Ao final do sprint, o time deve ter produzido uma parte do produto a ser entregue com alta qualidade, testado, completo e pronto. Embora essa entrega seja potencialmente uma versão, é o PO que define se será uma versão isolada ou aguarda a produção de novos sprints para formar uma versão. O SCRUM é o framework ágil mais utilizado no mercado nos dias atuais. Seus conceitos e organização de práticas empíricas conquistaram o mercado e se tornaram referência em gestão ágil de projetos, sendo a base para preceitos ágeis preconizados pelo PMI (Project Management Institute) e adotado como referência para a certificação ACP (Agile Cerfitied Professional) do próprio PMI.
+
+    
