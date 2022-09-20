@@ -1,10 +1,11 @@
-class Employee{
-  name: string;
+import Person from "../Person";
+
+class Employee extends Person{
   ri: string;
   cpf: string;
 
-  constructor(paramName: string, paramRi: string, paramCpf: string){
-    this.name = paramName;
+  constructor(paramName: string, paramAge: number, paramRi: string, paramCpf: string){
+    super(paramName, paramAge); // chamando o construtor da class Person
     this.ri = paramRi;
     this.cpf = paramCpf;
   }
