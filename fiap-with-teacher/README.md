@@ -9,6 +9,7 @@ Studies on Programming Logic with TypeScript, HTML5, CC3, JavaScript, Node.js an
     - #### [Day04](01-logic/day04/README.md)
     - #### [Day05](01-logic/day05/README.md)
     - #### [Day06](01-logic/day06/README.md)
+    - #### [Day07](01-logic/day07/README.md)
     
     - ### [Logic Challenges](01-logic/logic-challenges/README.md)
       - #### [Multiplication Table](01-logic/logic-challenges/01-multiplication-table/README.md)
