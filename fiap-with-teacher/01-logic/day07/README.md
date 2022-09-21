@@ -197,9 +197,7 @@
 
 ## Próxima aula
 
-- [ ] **Encapsulamento**
 - [ ] get & set
-
 - [ ] Estrutura de Dados
 - [ ] Algoritmos que formam a base da programação.
   - [x] Tree
