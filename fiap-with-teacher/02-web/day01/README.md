@@ -131,3 +131,13 @@
 ## Próxima aula
 
 - [ ] get & set
+
+## Grupo da semana
+
+Grupo 2
+Isabel Souza
+Isabella Sanchis
+Isadora Araujo
+José Fagundes
+Nathallye Tavares
+Tifane Sousa
