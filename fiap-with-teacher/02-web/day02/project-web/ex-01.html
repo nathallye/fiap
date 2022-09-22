@@ -1,0 +1,105 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" /> <!--tag de auto fechamento-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de HTML5, CSS3 & JS</title> <!--titulo da página na aba do navegador-->
+    <style type="text/css">
+
+      /* * - seletor universal*/
+      /*body, h1, h2 - seletor de tag*/
+      /*.name_class - sempre que possivel usar seletor de class*/
+      /*#name - seletor por id para JS*/
+      /*:hover pseudo seletor - significa que está acontecendo um evento nele*/
+      /*quanto mais especifico o seletor, mais importante(mais prioritário)*/
+
+      /*-----normalizar o navegador-----*/
+      body { /*seletor de tag*/
+        margin: 0; /*declaração CSS - propriedade_css: valor_propriedade;*/
+        padding: 0;
+      }
+
+      * { /* * seletor universal*/
+        box-sizing: border-box; /*box-sizing(tamanho da caixa) - propriedade CSS define como a largura e a altura totais de um elemento são calculadas. 
+        border-box - informa ao navegador para considerar qualquer borda e preenchimento nos valores especificados para a largura e a altura de um elemento. 
+        Se você definir a largura de um elemento para 100 pixels, esses 100 pixels incluirão qualquer borda ou preenchimento adicionado, 
+        e a caixa de conteúdo diminuirá para absorver essa largura extra. Ou seja, ele não aumentará para incluir os elementos, e sim irá comprimi-los para que caibam na caixa*/
+      }
+      /*-----normalizar o navegador-----*/
+
+      div.container { /*seletor de tag + seletor de classe*/
+        background-color: rgba(0, 0, 0, 0.5);
+
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        width: 100%;  
+        height: 100vh; /*vh - vieport height*/
+      }
+
+      h1, /*seletor de tag*/
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300; /*espessura da fonte*/
+        color: #555;
+        
+        margin: 0;
+      }
+
+      body > div > h1.title {
+        color: red;
+      }
+
+      h1.title,
+      h2.title {
+        color: #fff !important;
+      }
+
+      h1 {
+        font-size: 4em;
+      }
+
+      h2 {
+        font-size: 2em;
+      }
+
+      /*-------------mobile---------------*/
+      body {
+        background: url("assets/images/background-mobile.webp") no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+      /*-------------mobile---------------*/
+
+      /*Tablet - mediaquerie para largura da tela começando em 768px*/
+      @media (min-width: 768px) {
+        body {
+        background: url("assets/images/background-tablet.webp") no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+      }
+
+      /*Desktop - mediaquerie para largura da tela começando em 1280px*/
+      @media (min-width: 1280px) {
+        body {
+        background: url("assets/images/background-desktop.webp") no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Seja bem vindo(a) ao curso de HTML5, CSS3 & JavaScript!</h1> <!--somente um h1 por página ou por section-->
+      <h2 class="title">No momento o assunto é <i>HTML5</i></h2> <!--tag  h2 - subtítulo; i - itálico-->
+    </div>
+  </body>
+</html>

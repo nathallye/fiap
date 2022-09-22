@@ -1,7 +1,7 @@
 # Decola Tech 3
-## Contúdos do dia
+## Contúdos do dia(22/09/2022)
 
-- [x] 
+
 
 
 ## Próxima aula

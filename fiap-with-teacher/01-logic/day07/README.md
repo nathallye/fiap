@@ -195,9 +195,22 @@
             employee.regisEmployee();
             ```
 
+- [x] **Encapsulamento:** modificador de acesso
+  - [x] Os acessos são das classes filhas para a pai
+    - [x] **public** - todo mundo tem acesso
+      - [x] Por padrão é **public** quando não determinamos nenhum modificador de acesso.
+      - [x] Quem são "todo mundo"? Atributos e métodos da mesma classe, ou de classes filhas. Mesma classe(this.atributo), classe extendida/`extends`(chamando o super - construtor da classe pai/extendida - c) e objeto.
+    - [x] **protected** - todos do mesmo ambiente, e alguns que tem acesso a esse ambiente
+    - [x] **private** - só no mesmo ambiente
+    - [x] **static** - atributo ou método estático. Não precisa instanciar a classe para acessar
+
+- [x] **get and set**
+  - [x] **get** vai retornar a informação
+  - [x] **set** setar, quando alguém quiser alterar  o valor do atributo _salario
+
+
 ## Próxima aula
 
-- [ ] get & set
 - [ ] Estrutura de Dados
 - [ ] Algoritmos que formam a base da programação.
   - [x] Tree
