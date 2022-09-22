@@ -16,15 +16,18 @@ class Employee extends Person{
     paramSalary: number
     ) {
     super(paramName, paramAge); // chamando o construtor da class Person
-    // getter & setter - get - pegar, quando alguém quiser alterar  o valor do atributo _salario
     this.salary = paramSalary;
     this.ri = paramRi;
     this.cpf = paramCpf;
 
-    this.regisEmployee();
+    // this.regisEmployee(); 
   }
 
-  get salary(value: number){
+  // getter & setter 
+    // get - pegar, retorna a informação 
+    // set - setar,quando alguém quiser alterar  o valor do atributo _salario
+
+  get salary(){
     return this._salary;
   }
 
@@ -36,8 +39,8 @@ class Employee extends Person{
     }
   }
 
-  regisEmployee(){
-    console.log(`O funcionário ${this.name} cadastrado com sucesso.`)
+  public regisEmployee(){
+    console.log(`Funcionário ${this.name} cadastrado com sucesso! Ganha ${this.salary}`);
   }
 }
 

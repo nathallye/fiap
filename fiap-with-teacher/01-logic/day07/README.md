@@ -195,18 +195,101 @@
             employee.regisEmployee();
             ```
 
-- [x] **Encapsulamento:** modificador de acesso
-  - [x] Os acessos são das classes filhas para a pai
-    - [x] **public** - todo mundo tem acesso
-      - [x] Por padrão é **public** quando não determinamos nenhum modificador de acesso.
-      - [x] Quem são "todo mundo"? Atributos e métodos da mesma classe, ou de classes filhas. Mesma classe(this.atributo), classe extendida/`extends`(chamando o super - construtor da classe pai/extendida - c) e objeto.
-    - [x] **protected** - todos do mesmo ambiente, e alguns que tem acesso a esse ambiente
-    - [x] **private** - só no mesmo ambiente
-    - [x] **static** - atributo ou método estático. Não precisa instanciar a classe para acessar
+- [x] **Encapsulamento** 
+  - [x] **Modificador de acesso:**
+    - [x] Os acessos são das classes filhas para a pai.
+      - [x] **public** - todo mundo tem acesso;
+        - [x] Por padrão é **public** quando não determinamos nenhum modificador de acesso.
+        - [x] Quem são "todo mundo"? Atributos e métodos da mesma classe, ou de classes filhas. Mesma classe(this.atributo), classe extendida/`extends`(chamando o super - construtor da classe pai/extendida) e objeto.
 
-- [x] **get and set**
-  - [x] **get** vai retornar a informação
-  - [x] **set** setar, quando alguém quiser alterar  o valor do atributo _salario
+          ``` TS
+          class Employee extends Person{
+            public ri: string; // atributo público, todo mundo tem acesso;
+            cpf: string; // quando não determinamos nenhum modificador de acesso, por padrão é público, ou seja, todo mundo tem acesso; 
+
+          // [...]
+          }
+
+          export default Employee;
+          ```
+
+      - [x] **protected** - todos do mesmo ambiente, e alguns que tem acesso a esse ambiente;
+      - [x] **private** - só no mesmo ambiente;
+
+        ``` TS
+        class Employee extends Person{
+          private _salary: number = 0; // atributo privado, acessado só no mesmo ambiente; deve o _(underline) na frente do nome;
+        
+        // [...]
+        }
+
+        export default Employee;
+        ```
+
+      - [x] **static** - atributo ou método estático. Não precisa instanciar a classe para acessar.
+
+        ``` TS
+        import Person from "../Person";
+
+        class Employee extends Person{
+          static ipAddress: string = "127.0.0.1"; // atributo estático, não precisa instanciar a classe para acessar;
+
+          // [...]
+        }
+
+        export default Employee;
+
+        console.log("Acessando informação estática", Employee.ipAddress);
+        ```
+
+  - [x] **getter and setter:**
+    - [x] **get**(pegar) - vai retornar a informação;
+    - [x] **set**(setar) - quando alguém quiser alterar  o valor do atributo `_salario`(private).
+
+      ``` TS
+      import Person from "../Person";
+
+      class Employee extends Person{
+        static ipAddress: string = "127.0.0.1";
+        private _salary: number = 0; 
+        ri: string; 
+        cpf: string;
+
+        constructor(
+          paramName: string, 
+          paramAge: number, 
+          paramRi: string, 
+          paramCpf: string,
+          paramSalary: number
+          ) {
+          super(paramName, paramAge); // acessando o construtor da classe pai/classe extendida
+          this.salary = paramSalary;
+          this.ri = paramRi;
+          this.cpf = paramCpf;
+
+          this.regisEmployee();
+        }
+
+        // getter & setter 
+        get salary(){ // pegar, retorna a informação 
+          return this._salary;
+        }
+
+        set salary(value: number){ // setar quando alguém quiser alterar  o valor do atributo _salario
+          if(value <= 1200){
+            this._salary = 1200;
+          }else{
+            this._salary = value;
+          }
+        }
+
+        public regisEmployee(){ // método público, todo mundo tem acesso;
+          console.log(`Funcionário ${this.name} cadastrado com sucesso! Ganha ${this.salary}`);
+        }
+      }
+
+      export default Employee;
+      ```
 
 
 ## Próxima aula
