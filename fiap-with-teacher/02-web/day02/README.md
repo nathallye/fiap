@@ -10,6 +10,19 @@
     - [x] `:hover` pseudo seletor - significa que está acontecendo um evento nele
     - [x] Quanto mais especifico o seletor, mais importante(mais prioritário).
 
+  - **Aplicação de estilo**
+    - [x] Estilo Inline/linha 
+      
+      ``` HTML
+      <div style=”color:red”>
+      ``` 
+
+    - [x] Estilo incorporado - Tag dentro da tag `head`
+
+      ``` HTML
+      <style></style>
+      ```
+
   - [x] **Declaração CSS**
     - [x] propriedade_css: valor_propriedade;
       ``` CSS
@@ -20,6 +33,9 @@
       ```
 
   - [x] **Normalizar o navegador**
+    - [x] Box-Sizing
+      - [x]  content-box
+      - [x]  border-box
 
     ``` CSS
     body { 
@@ -35,9 +51,17 @@
     }
     ```
 
-  - [x] **Imagens responsivas**
+  - [x] **Box-Model**
+    - [x] Camadas: margin, border, padding e content
+    - [x] Lados: top, right, bottom left
 
-    ``` CSS
+  - [x] **Imagens responsivas**
+    - [x] @media
+      - [x] Celular ? - Não tem - Mobile First
+      - [x] Tablet - @media (min-width: 768px)
+      - [x] Desktop - @media (min-width: 1280px)
+
+      ``` CSS
       /*-------------mobile---------------*/
       body {
         background: url("assets/images/background-mobile.webp") no-repeat;
@@ -63,7 +87,7 @@
         background-position: center center;
         }
       }
-    ```
+      ```
 
 ## Próxima aula
 
