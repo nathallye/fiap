@@ -22,6 +22,7 @@ Studies on Programming Logic with TypeScript, HTML5, CC3, JavaScript, Node.js an
   - ### [WEB](fiap-with-teacher/02-web/README.md)
     - #### [Day01](fiap-with-teacher/02-web/day01/README.md)
     - #### [Day02](fiap-with-teacher/02-web/day02/README.md)
+    - #### [Day03](fiap-with-teacher/02-web/day03/README.md)
   
   - ### [Node.js](fiap-with-teacher/03-node/README.md)
     - #### [Day01](fiap-with-teacher/03-node/day01/README.md)
