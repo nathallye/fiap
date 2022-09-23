@@ -1,6 +1,6 @@
 # Decola Tech 3
 
-## Contúdos do dia(23/09/2022)
+## Conteúdos do dia(23/09/2022)
 
 - [x] **Iniciando um projeto JS**
 
