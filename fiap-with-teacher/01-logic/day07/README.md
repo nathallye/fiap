@@ -290,8 +290,6 @@
 
       export default Employee;
       ```
-
-
 ## Próxima aula
 
 - [ ] Estrutura de Dados
@@ -299,3 +297,16 @@
   - [x] Tree
   - [ ] Stack
   - [ ] Queue
+
+## Revisão prova
+
+- [x] Herança
+  - [x] class B extends de A
+- [x] Instanciar uma class
+  - [x] new Pessoa()
+- [x] Iniciar o TypeScript
+  - [x] tsc -w(watching/assistindo)
+- [x] Responsável por iniciar a classe
+  - [x] constructor
+- [x] Comando para iniciar um projeto JS(package.json)
+  - [x] npm init -y
