@@ -314,4 +314,6 @@
 - [x] **O que é uma classe?**
   - [x] É um conjunto de atributos e métodos agrupados e reutilizáveis.
 - [x] **Atributos**
-  - [x] Propriedades dentro de uma classe, que armazenam valor e possuem recursos
+  - [x] Propriedades dentro de uma classe, que armazenam valor e possuem recursos.
+- [x] **Princípio do SOLID que determina que uma classe, uma função ou rotina deve ter somente uma responsabilidade e fazê-la bem**
+  - [x] SRP - Single Responsibility Principle - Princípio da Responsabilidade Única
