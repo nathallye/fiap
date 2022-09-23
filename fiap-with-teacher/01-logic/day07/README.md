@@ -302,7 +302,7 @@
 
 - [x] Herança
   - [x] class B extends de A
-- [x] Instanciar uma class
+- [x] Instanciar uma classe
   - [x] new Pessoa()
 - [x] Iniciar o TypeScript
   - [x] tsc -w(watching/assistindo)
