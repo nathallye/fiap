@@ -317,3 +317,5 @@
   - [x] Propriedades dentro de uma classe, que armazenam valor e possuem recursos.
 - [x] **Princípio do SOLID que determina que uma classe, uma função ou rotina deve ter somente uma responsabilidade e fazê-la bem**
   - [x] SRP - Single Responsibility Principle - Princípio da Responsabilidade Única
+- [x] **É uma boa prática de programação que incentiva fortemente o código simples**
+  - [x] YAGNI - Keep it Simple, Stupid - Crie ou projete seu software o mais simples possível. Estupidamente simples.
