@@ -56,7 +56,7 @@
     - [x] Sempre implemente uma nova funcionalidade quando precisar dela, e não quando achar que vai precisar
 
   - [x] KISS
-    - [x] Keep it Simple, Stupid - Crie ou projete seu software o mais simples possívek. Estupidamente simples.
+    - [x] Keep it Simple, Stupid - Crie ou projete seu software o mais simples possível. Estupidamente simples.
 
   - [x] SOLID - é um conjunto de princípios que juntos garantem um software de qualidade
     - [x] S - Single Responsibility Principle(SRP)/Princípio da Responsabilidade Única
@@ -300,13 +300,22 @@
 
 ## Revisão prova
 
-- [x] Herança
+- [x] **Herança**
   - [x] class B extends de A
-- [x] Instanciar uma classe
+  - [x] Permite que a classe filha acesse informações visíveis da classe base.
+- [x] **Instanciar uma classe**
   - [x] new Pessoa()
-- [x] Iniciar o TypeScript
+- [x] **Iniciar o TypeScript(inicia a compilação de um código TypeScript e mantendo a compilação a cada alteração do código .ts)**
   - [x] tsc -w(watching/assistindo)
-- [x] Responsável por iniciar a classe
+- [x] **Método é executado automaticamente quando um objeto é instanciado**
   - [x] constructor
-- [x] Comando para iniciar um projeto JS(package.json)
+- [x] **Comando para iniciar um projeto JS(package.json)**
   - [x] npm init -y
+- [x] **O que é uma classe?**
+  - [x] É um conjunto de atributos e métodos agrupados e reutilizáveis.
+- [x] **Atributos**
+  - [x] Propriedades dentro de uma classe, que armazenam valor e possuem recursos.
+- [x] **Princípio do SOLID que determina que uma classe, uma função ou rotina deve ter somente uma responsabilidade e fazê-la bem**
+  - [x] SRP - Single Responsibility Principle - Princípio da Responsabilidade Única
+- [x] **É uma boa prática de programação que incentiva fortemente o código simples**
+  - [x] YAGNI - Keep it Simple, Stupid - Crie ou projete seu software o mais simples possível. Estupidamente simples.
