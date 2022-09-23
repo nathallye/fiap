@@ -56,7 +56,7 @@
     - [x] Sempre implemente uma nova funcionalidade quando precisar dela, e não quando achar que vai precisar
 
   - [x] KISS
-    - [x] Keep it Simple, Stupid - Crie ou projete seu software o mais simples possívek. Estupidamente simples.
+    - [x] Keep it Simple, Stupid - Crie ou projete seu software o mais simples possível. Estupidamente simples.
 
   - [x] SOLID - é um conjunto de princípios que juntos garantem um software de qualidade
     - [x] S - Single Responsibility Principle(SRP)/Princípio da Responsabilidade Única
