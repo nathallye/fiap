@@ -1,6 +1,6 @@
 # Decola Tech 3
 
-## Contúdos do dia(21/09/2022)
+## Aula 1(21/09/2022)
 
 - [x] Linguagem de Marcação é `HTML`;
 - [x] Linguagem de Estilo é `CSS`;

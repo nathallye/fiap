@@ -18,7 +18,7 @@
 
 -  Todas as Sextas - Atividades: Trabalho em grupo e prova. 2h trabalho e 1h prova.
 
-## Contúdos do dia(12/09/2022):
+## Aula 1(12/09/2022):
 
 - [x] **Lógica de Programação:** É como pensa ou deve pensar um programador. Sequência de instruções para escrever um programa de computador, com o objetivo de resolver um problema.
   - [x] Visão Macro: Panorama da idéia, o que a aplicação deve fazer. Visão do todo. Ex.: Um Ecommerce tem quer ter uma tela de autênticação, catálogo de produtos, carrinho de compras...

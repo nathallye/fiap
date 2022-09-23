@@ -1,6 +1,6 @@
 # Decola Tech 3
 
-## Contúdos do dia(23/09/2022)
+## Aula 3(23/09/2022)
 
 - [x] **Iniciando um projeto JS**
 
