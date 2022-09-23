@@ -300,18 +300,18 @@
 
 ## Revisão prova
 
-- [x] Herança
+- [x] **Herança**
   - [x] class B extends de A
   - [x] Permite que a classe filha acesse informações visíveis da classe base.
-- [x] Instanciar uma classe
+- [x] **Instanciar uma classe**
   - [x] new Pessoa()
-- [x] Iniciar o TypeScript(inicia a compilação de um código TypeScript e mantendo a compilação a cada alteração do código .ts)
+- [x] **Iniciar o TypeScript(inicia a compilação de um código TypeScript e mantendo a compilação a cada alteração do código .ts)**
   - [x] tsc -w(watching/assistindo)
-- [x] Método é executado automaticamente quando um objeto é instanciado
+- [x] **Método é executado automaticamente quando um objeto é instanciado**
   - [x] constructor
-- [x] Comando para iniciar um projeto JS(package.json)
+- [x] **Comando para iniciar um projeto JS(package.json)**
   - [x] npm init -y
-- [x] O que é uma classe?
+- [x] **O que é uma classe?**
   - [x] É um conjunto de atributos e métodos agrupados e reutilizáveis.
-- [x] Atributos
+- [x] **Atributos**
   - [x] Propriedades dentro de uma classe, que armazenam valor e possuem recursos
