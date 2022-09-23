@@ -1,0 +1,57 @@
+header {
+  background-color: #fff;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed; // posição do header fixada no topo
+  z-index: 100; // header vai ficar na frente de todo mundo do mesmo nível(até 100 tags); quanto maior o número, melhor
+  top: 0;
+  width: 100%; // largura de 100% 
+
+  & > nav {
+    width: 70%;
+
+    > ul {
+      display: flex;
+
+      margin: 0;
+      
+      > li {
+        list-style: none; // remove as "bolinhas" da lista
+        margin-right: 20px;
+        
+        > a {
+          font-family: "Open Sans";
+          text-decoration: none; // remove o a linha de link
+          font-weight: bold;
+          color: #222;
+        }
+      }
+    }
+  }
+}
+
+section.full-banner { // imagem para o tamanho do mobile(por padrão é mobile)
+  background: url("../images/hero-bg-xs.webp") no-repeat;
+  background-size: cover;
+
+  width: 100%;
+  height: 100vh;
+}
+
+button {
+  text-transform: uppercase; // converte o testo para letras maiúsculas
+  width: 290px;
+  line-height: 40px;
+  border-radius: 25px;
+  border: none; // remove a borda do botão
+}
+
+@media (min-width: 1280px){ // imagem para o tamanho do desktop
+  section.full-banner {
+    background: url("../images/hero-bg.webp");
+    background-size: cover;
+  }
+}
