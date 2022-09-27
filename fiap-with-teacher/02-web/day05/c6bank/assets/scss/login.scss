@@ -1,0 +1,41 @@
+.full-banner-form {
+  background: #dddcda;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: calc(100vh - 100px); // a altura da tela(100vh) - a altura do header(100px)
+
+  .container-login {
+    display: flex;
+
+    width: 420px;
+    height: 40vh;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      width: 100%;
+      
+      label {
+        display: flex;
+        flex-direction: column;
+
+        width: 70%;
+
+        input {
+          width: 100%;
+        }
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

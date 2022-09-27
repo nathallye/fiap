@@ -80,14 +80,6 @@
 
     - [x] Para verificarmos as alterações em tela vamos rodar o script `npm run dev` para converter os arquivo scss para css;
 
-  - [x]
-  - [x]
-  - [x]
-  - [x]
-
-
-
-
 ## Próxima aula
 
-- [ ] 
+- [ ] Login

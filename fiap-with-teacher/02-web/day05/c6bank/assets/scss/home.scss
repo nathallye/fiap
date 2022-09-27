@@ -1,0 +1,141 @@
+header {
+  transition-duration: 0.5s;
+
+  background-color: #fff;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed; // posição do header fixada no topo
+  z-index: 100; // header vai ficar na frente de todo mundo do mesmo nível(até 100 tags); quanto maior o número, melhor
+  top: 0;
+  width: 100%; // largura de 100% 
+  height: 100px; // altura de 100px
+
+  & > nav {
+    width: 70%;
+
+    > ul {
+      display: flex;
+
+      margin: 0;
+      
+      > li {
+        list-style: none; // remove as "bolinhas" da lista
+        margin-right: 20px;
+        
+        > a {
+          font-family: "Open Sans";
+          text-decoration: none; // remove o a linha de link
+          font-weight: bold;
+          color: #222;
+        }
+      }
+    }
+  }
+}
+
+section.full-banner { // imagem para o tamanho do mobile(por padrão é mobile)
+  background: url("../images/hero-bg-xs.webp") no-repeat;
+  background-size: cover;
+
+  width: 100%;
+  height: 100vh;
+  
+  > .destak { // dentro section que tem a class full-banner temos uma div com a class destak que contém o h1 e o h2
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 40%;
+    height: 60vh;
+    
+    > h1 {
+      margin: 0;
+      margin-bottom: 20px;
+
+      font-weight: 300;
+      font-size: 4rem;
+      line-height: 1em;
+    }
+    > h2, h3 {
+      margin: 0;
+
+      font-weight: 300;
+    }
+    h3 {
+      background: rgba(36, 36, 36, 0.35);
+
+      width: 95%;
+      padding: 0 2%;
+      border-radius: 25px;
+
+      font-weight: regular;
+      font-size: 0.8em;
+      line-height: 3em;
+      color: #eee;
+
+      // span e tag "a" são elementos de texto, portanto, pode não ser que não funcione a aplicação de propriedades de elementos de bloco
+      // para formartar cores, bordar e tamanho é necessário transformá-lo em um elemento de bloco(display: block)
+      > span {
+        background: #006d8f;
+
+        // display: inline-block;
+
+        padding: 0 3%;
+        border-radius: 25px;
+        width: fit-content;
+        
+        line-height: 1.6em;
+        font-weight: bold;
+      }
+    }
+  } 
+}
+
+::selection { // pseudo classe para quando o usuário selecionar o texto com o cursor
+  background: #ffe45c;
+  color: #242424;
+}
+
+// tag button com a classe disabled
+button.disabled { // botão que não tem efeito(quando o site está no todo o bottom não tem cor)
+  background: none;
+  border: solid 0.5px rgba(36, 36, 36, 0.8);
+}
+
+button.disabled:hover { // pseudo classe selection para quando o usário passar o cursor sobre o button
+  background: rgba(36, 36, 36, 0.2);
+}
+
+button {
+  // não é possível fazer linear-gradient com background-image
+  background: linear-gradient(150deg, #ffe45c 0%, #ffc900 100%); // como de diagonal do amarelo mais clarinho para o amarelo ouro mais forte
+  text-transform: uppercase; // converte o testo para letras maiúsculas
+  width: 190px;
+  line-height: 40px;
+  border-radius: 25px;
+  border: none; // remove a borda do botão
+}
+
+button:hover {
+  background: linear-gradient(150deg, #ffe668 0%, #ffdc5f 100%);
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2); // sombra quando colocar o cursor sobre o button
+  cursor: pointer; // ponteiro quando colocar o cursor sobre o button
+}
+
+@media (min-width: 992px){ // imagem para o tamanho do desktop
+  section.full-banner {
+    background: url("../images/hero-bg.webp") no-repeat;
+    background-size: cover;
+  }
+}
+
+.jss4 .jss6 { // para renderizar a logo do c6bank
+  fill: hsla(0, 0%, 14%, 1);
+}
+
+.jss12 { // para renderizar a logo do c6bank
+  width: auto;
+  height: 24px;
+}
