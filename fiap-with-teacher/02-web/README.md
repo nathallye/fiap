@@ -6,3 +6,6 @@ Studies on Programming Logic with TypeScript, HTML5, CC3, JavaScript, Node.js an
     - #### [Day01](day01/README.md)
     - #### [Day02](day02/README.md)
     - #### [Day03](day03/README.md)
+    - #### [Day04](day04/README.md)
+    - #### [Day05](day05/README.md)
+    
