@@ -41,24 +41,32 @@
   </section>
 
   <footer>
-    
+
   </footer>
 
   <script>
     const elHeader = document.querySelector(".top-site");
     const elButton = document.querySelector(".top-button");
+    const elBody = document.querySelector("body");
 
-    // precisamos "escutar" o evento `scroll` do `window` para entendermos quando devemos mudar as cores do `header`(top-site) e do `button`(top-button)
-    // JavaScript é uma linguagem dirigida a eventos - criamos uma escuta para um evento
+    elHeader.style.background = "none";
+    elButton.classList.add("disabled");
+
     window.addEventListener("scroll", (e) => {
-      // console.log(window.scrollY);
-      const position = window.scrollY;
-      if (position <= 100) {
-        elHeader.style.background = "none"; // aplica um estilo ao elemento header selecionado
-        elButton.classList.add("disabled"); // adiciona uma classe ao elemento button selecionado
-      } else {
+      const positionScroll = window.scrollY;
+      if (positionScroll <= 100) {
+        elHeader.style.background = "none";
+        elButton.classList.add("disabled");
+        elHeader.classList.remove("text-header");
+
+      } else if (positionScroll <= 945) {
         elHeader.style.background = "#fff";
-        elButton.classList.remove("disabled"); // remove uma classe ao elemento button selecionado
+        elButton.classList.remove("disabled");
+        elHeader.classList.remove("text-header");
+
+      } else {
+        elHeader.style.background = "#000"
+        elHeader.classList.add("text-header");
       }
     });
   </script>

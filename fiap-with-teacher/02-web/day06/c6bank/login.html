@@ -31,16 +31,20 @@
 
   <section class="full-banner-form">
     <div class="container-login">
-      <form class="form-login">
+      <form class="form-login" method="post">
         <p class="text-login">Faça seu login</p>
         <label for="login">
           CPF*:
-          <input type="text" name="login" id="login" placeholder="Digite o CPF" />
+          <input type="text" name="login" id="login" required placeholder="Digite o CPF" 
+            pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}\-[0-9]{2}" 
+              title="O CPF deve conter o formato 123-456-789-00" />
         </label>
         
         <label for="senha">
           Senha*:
-          <input type="password" name="password" id="password" placeholder="Digite a senha" />
+          <input type="password" name="password" id="password" required placeholder="Digite a senha" 
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="A senha deve conter ao menos uma letra minúscula, uma letra maiúscula, um número e pelo menos 8 caracteres" />
         </label>
   
         <button type="submit">continuar</button>
@@ -75,6 +79,8 @@
       }
     });
   </script>
+
+  <script type="text/javascript" src="assets/js/main.js"></script>
 
 </body>
 </html>
