@@ -1,5 +1,8 @@
-.full-banner-form {
-  background: #dddcda;
+section.full-banner-form {
+  background: url("../images/hero-bg-xs.webp") no-repeat;
+  background-size: cover;
+
+  // background: #dddcda;
 
   display: flex;
   align-items: center;
@@ -8,34 +11,58 @@
   width: 100%;
   height: calc(100vh - 100px); // a altura da tela(100vh) - a altura do header(100px)
 
-  .container-login {
+  & > .container-login {
+    background: rgba(247, 247, 247, 0.655);
+    
     display: flex;
-
+    
     width: 420px;
-    height: 40vh;
+    height: 35vh;
+    border-radius: 5%;
 
-    form {
+    > form {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
 
       width: 100%;
+
+      // border: solid 5px red;
+
+      > p.text-login {
+        margin-top: 20px;
+
+        font-size: 26px;
+        font-weight: bold;
+      }
       
-      label {
+      > label {
         display: flex;
         flex-direction: column;
 
         width: 70%;
 
-        input {
+        > input {
           width: 100%;
         }
       }
 
-      p {
+      > p {
         margin: 0;
+        margin-bottom: 10px;
+        
+        > a {
+          text-decoration: none;
+        }
       }
     }
+  }
+}
+
+@media (min-width: 992px){ // imagem para o tamanho do desktop
+  section.full-banner-form  {
+    background: url("../images/hero-bg.webp") no-repeat;
+    background-size: cover;
   }
 }

@@ -1,6 +1,6 @@
 # Decola Tech 3
 
-## Aula 5(25/09/2022)
+## Aula 5(27/09/2022)
 
 - [x] Sempre que vamos usar o JS para manipular o HTML, chamamos esse recurso de `Web API`. Dentro do Web API quem cuida dessa manipulação é o `DOM(Document Object Model`.
   - [x] O DOM significa que as tags(div, h1, h2, video, canvas...) possui recursos. 

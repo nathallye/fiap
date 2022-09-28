@@ -1,6 +1,6 @@
 # Decola Tech 3
 
-## Aula 4(24/09/2022)
+## Aula 4(26/09/2022)
 
 - [x] **RWD - Responsive Web Design**
   Para funcionar o design responsive o primeiro passo é inserir a tag `meta` viewport no `head` do projeto, em seguida definir as `mediaqueries` @media e por fim os `breakpoints` que são a largura máxima em px de cada dispositivo. 
