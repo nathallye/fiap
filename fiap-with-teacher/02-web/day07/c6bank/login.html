@@ -29,14 +29,28 @@
     <button class="top-button">abra sua conta</button>
   </header>
 
-  <section class="full-banner">
-    <div class="destak">
-      <div>
-        <h3><span>C6 GLOBAL INVEST</span> Bolsa americana e fundos globais direto no app</h3>
-      </div>
-      <h1>O banco da vida de 20 milhões de pessoas</h1>
-      <h2>Conta digital, cartão de crédito, investimentos e mais: tudo em um só app.</h2>
-      <button>nossos produtos</button>
+  <section class="full-banner-form">
+    <div class="container-login">
+      <form class="form-login" method="post">
+        <p class="text-login">Faça seu login</p>
+        <label for="login">
+          CPF*:
+          <input type="text" name="login" id="login" required placeholder="Digite o CPF"
+            pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}\-[0-9]{2}"
+              title="O CPF deve conter o formato 123-456-789-00" />
+        </label>
+
+        <label for="senha">
+          Senha*:
+          <input type="password" name="password" id="password" required placeholder="Digite a senha"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="A senha deve conter ao menos uma letra minúscula, uma letra maiúscula, um número e pelo menos 8 caracteres" />
+        </label>
+
+        <button type="submit">continuar</button>
+        <p><a href="#">Esqueci minha senha</a></p>
+        <p><a href="#">Ainda não sou cliente</a></p>
+      </form>
     </div>
   </section>
 
@@ -47,51 +61,26 @@
   <script>
     const elHeader = document.querySelector(".top-site");
     const elButton = document.querySelector(".top-button");
-    const elBody = document.querySelector("body");
 
     elHeader.style.background = "none";
     elButton.classList.add("disabled");
 
+    // precisamos "escutar" o evento `scroll` do `window` para entendermos quando devemos mudar as cores do `header`(top-site) e do `button`(top-button)
+    // JavaScript é uma linguagem dirigida a eventos - criamos uma escuta para um evento
     window.addEventListener("scroll", (e) => {
-      const positionScroll = window.scrollY;
-
-      if (positionScroll <= 100) {
-        elHeader.style.background = "none";
-        elButton.classList.add("disabled");
-        elHeader.classList.remove("text-header");
-
-      } else if (positionScroll <= 945) {
+      // console.log(window.scrollY);
+      const position = window.scrollY;
+      if (position <= 100) {
+        elHeader.style.background = "none"; // aplica um estilo ao elemento header selecionado
+        elButton.classList.add("disabled"); // adiciona uma classe ao elemento button selecionado
+      } else {
         elHeader.style.background = "#fff";
-        elButton.classList.remove("disabled");
-        elHeader.classList.remove("text-header");
-
-      } else {
-        elHeader.style.background = "#000"
-        elHeader.classList.add("text-header");
+        elButton.classList.remove("disabled"); // remove uma classe ao elemento button selecionado
       }
-
-      /*
-      if (scrollY < 100) {
-        elHeader.style.background = "none";
-        elButton.classList.add("disabled");
-
-      } else {
-        const elLogo = elHeader.querySelector(".jss12");
-
-        if (window.scrollY >= (elBody.clientHeight - 945)) {
-          elHeader.style.background = "#000";
-          elLogo.style.fill = "#fff";
-          elHeader.classList.add("footer-link-a");
-        } else {
-          elHeader.style.background = "#fff";
-          elButton.classList.remove("disabled");
-          elLogo.style.fill = "#000";
-          elHeader.classList.remove("footer-link-a");
-        }
-      }
-      */
     });
   </script>
+
+  <script type="text/javascript" src="assets/js/main.js"></script>
 
 </body>
 </html>

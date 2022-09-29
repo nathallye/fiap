@@ -37,10 +37,10 @@
 
         - [x] <header> - cabeçalho da página ou de uma seção. Só pode haver um no mesmo nível hierárquico. ou seja, ou uma tag <header> na página, ou em cada seção.
           - [x] 1 tag header na página ou por seção
-        
+
         - [x] <section> - cria uma seção isolada na página.
           - [x] Ex. Site da Apple para iPhone 14 cada parte da landing page é uma section
-        
+
         - [x] <footer> - rodapé da página ou de uma seção. Só pode haver um no mesmo nível hierárquico. ou seja, ou uma tag <footer> na página, ou em cada seção.
           - [x] 1 tag <footer> na página ou por seção
           - [x] Em que situação podemos ter três tags footer?
@@ -50,68 +50,63 @@
         - [x] <nav> - Menu de navegação. Dentro dele haverá hiperlinks (<a>)
 
         - [x] <main> - Conteúdo principal da página. 1 por página
-        
+
         - [x] <article> - Conteúdo jornalístico ou científico.
-        
+
         - [x] <div> - Quando não importância semântica.
 
         - [x] <aside> - Tag semântica opcional. Publicidade.
-  
+
   - [x] `Google lighthouse` para verificarmos como está a semântica, responsividade da página
 
-- [x] **Validação da tela de Login** 
+- [x] **Validação da tela de Login**
   - [x] Validação dos formulários com JS
 
   - [x] Arquitetura Cliente/Servidor
     - [x] `Resquest` - O servidor está solicitando uma informação
     - [x] `Response` - Quando enviamos um formulário para o servidor com informações o servidor recupera essas informações e devolve uma resposta
-  
+
   - [x] A tag `form` serve para agrupar os inputs e enviar junto para o servidor.
     - [x] Tem duas propriedades `method` e `action`:
       - [x] `method` - por padrão é `get`
         - [x] `get` - para envio de dados sigilosos não devemos usar
         - [x] `post` - recomendado para envio de dados sigilosos
       - [x] `action` - a action que seremos redirecionados para autenticação, action não é mais usado, ao invés disso é usado uma função JS para quando alguém envia o formulário é feita a validão na mesma página
-  
+
   - [x] Validão senha com REGEX:
-    
+
     ``` HTML
-    <input type="password" name="password" id="password" required placeholder="Digite a senha" 
+    <input type="password" name="password" id="password" required placeholder="Digite a senha"
       pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
         title="A senha deve conter ao menos uma letra minúscula, uma letra maiúscula, um número e pelo menos 8 caracteres" />
     ```
 
   - [x] Validação do CPF:
-    
+
     ``` HTML
-    <input type="text" name="login" id="login" required placeholder="Digite o CPF" 
-      pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}\-[0-9]{2}" 
+    <input type="text" name="login" id="login" required placeholder="Digite o CPF"
+      pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}\-[0-9]{2}"
         title="O CPF deve conter o formato 123-456-789-00" />
     ```
 
 - [x] Trabalhando com JS em um arquivo externo
   - [x] Dicas
     - [x] Existem 7 tipos de erros diferentes no JS, 3 deles são os principais
-      - [x] 1. `SyntaxError`: Erro de escrita
-      - [x] 2. `ReferenceError`: Chamou alguém que não existe. Exemplo, chamou uma variável que não foi declarada.
-      - [x] 3. `TypeError`: Violou alguma regra. Por exemplo, atribuir um novo valor para uma constante.
-      - [x] 4. RangeError:
-      - [x] 5. EvalError:
-      - [x] 6. InternalError:
-      - [x] 7. URIError
-
-      - [x]
-      - [x]
-      - [x]
-
+      - [x] 1. `SyntaxError`: Erro de escrita;
+      - [x] 2. `ReferenceError`: Chamou alguém que não existe. Exemplo, chamou uma variável que não foi declarada;
+      - [x] 3. `TypeError`: Violou alguma regra. Por exemplo, atribuir um novo valor para uma constante;
+      - [x] 4. `RangeError`: Estourou o limite de aninhamento ou faixa de valores;
+      - [x] 5. `EvalError`: Evitar o comando eval;
+      - [x] 6. `InternalError`: Memória, processamento, crash no chrome ou V8;
+      - [x] 7. `URIError`: Erros que acontecem ao consumir dados externos, com url inválidas.
 
 ## Próxima aula
 
-- [ ] 
+- [ ] Funções JavaScript
 
 ## Conteúdo prova
 
-[ ] Elementos Semânticos do HRML5 - SEO
-[ ] Principais propriedades do CSS3
-[ ] Funções JavaScript
+- [ ] Elementos Semânticos do HTML5 - SEO
+- [ ] Principais propriedades do CSS3
+- [ ] Funções JavaScript
 

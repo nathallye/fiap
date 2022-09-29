@@ -54,7 +54,6 @@
 
     window.addEventListener("scroll", (e) => {
       const positionScroll = window.scrollY;
-
       if (positionScroll <= 100) {
         elHeader.style.background = "none";
         elButton.classList.add("disabled");
@@ -69,29 +68,10 @@
         elHeader.style.background = "#000"
         elHeader.classList.add("text-header");
       }
-
-      /*
-      if (scrollY < 100) {
-        elHeader.style.background = "none";
-        elButton.classList.add("disabled");
-
-      } else {
-        const elLogo = elHeader.querySelector(".jss12");
-
-        if (window.scrollY >= (elBody.clientHeight - 945)) {
-          elHeader.style.background = "#000";
-          elLogo.style.fill = "#fff";
-          elHeader.classList.add("footer-link-a");
-        } else {
-          elHeader.style.background = "#fff";
-          elButton.classList.remove("disabled");
-          elLogo.style.fill = "#000";
-          elHeader.classList.remove("footer-link-a");
-        }
-      }
-      */
     });
   </script>
+
+  <script type="text/javascript" src="assets/js/main.js"></script>
 
 </body>
 </html>
