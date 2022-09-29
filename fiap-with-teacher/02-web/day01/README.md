@@ -7,8 +7,8 @@
 - [x] Linguagem de Programação é `JavaScript`;
 - [x] Código Semântico
   - [x] `h1` - título da página
-  - [x] `h2` - subtítulo 
-  - [x] Só podemos ter um `h6` no código se tivermos os elementos `h3`, `h4` e `h5`. Isso é código semântico. 
+  - [x] `h2` - subtítulo
+  - [x] Só podemos ter um `h6` no código se tivermos os elementos `h3`, `h4` e `h5`. Isso é código semântico.
 - [x] Tags Básicas
 - [ ]  Tabelas e listas
 
@@ -28,8 +28,8 @@
 
 - [x] emmet extension in vscode
   - [x] html:5 - atalho para iniciar uma estrutura html
-    
-    ``` HTML 
+
+    ``` HTML
     <!DOCTYPE html>
     <html lang="pt-br">
     <head>
@@ -45,13 +45,13 @@
 
   - [x] Todo comando HTML chamamos de `tag` ou `elemento`, toda tag que abre tem que fechar.
     - [x] O que está entre as tags de abertura e fechamento é o `conteúdo`:
-  
+
       ``` HTML
       <h1>
         Conteúdo
       </h1>
       ```
-  
+
     - [x] O que está dentro da tag de abertura é os `atributos`:
 
       ``` HTML
@@ -60,17 +60,17 @@
       </h1>
       ```
 
-  - [x] `DOCTYPE` 
+  - [x] `DOCTYPE`
     - [x] Não é uma tag do HTML, e sim `para o navegador`. Irá informar para o navegador o `tipo de documento` que ele deve carregar:
     - [x] <!DOCTYPE html>
 
-  - [x] Tag `html`  
+  - [x] Tag `html`
     - [x] Atributos globais:
       - [x] O `lang` é um atributo global:
-        
+
         ``` HTML
         <html lang="pt-br">
-          
+
         </html>
         ```
 
@@ -88,7 +88,7 @@
 
         - [x] `head` - Carrega tudo que deve existir antes da página ser exibida.
           - [x] Dentro do `head` temos as tags `meta`(informações de configuração - tag de auto fechamento), `title` e `link`(para carregar os arquivos css).
-            
+
             ``` HTML
             <html lang="pt-br">
               <head>
@@ -120,10 +120,10 @@
 
 - [x] Dicas de boas práticas para criar um site profissional:
   - [x] Use fontes diferentes do padrão do navegador
-    - [x] Padrão do navegador "Times new roman" 
+    - [x] Padrão do navegador "Times new roman"
   - [x] Evite a cor preta
-    - [x] Preferencia um tom de cinza   
-  - [x] Quando usar imagens, use imagens de alta definição bem pensadas        
+    - [x] Preferencia um tom de cinza
+  - [x] Quando usar imagens, use imagens de alta definição bem pensadas
     - [x] Vetores - ícones - .svg
     - [x] Fundo transparente - .webp(qualidade de um png, com peso de um jpg compactado)
     - [x] Imagens - .jpg em último caso, se não tiver como usar as demias acima... usa PNG se tiver fundo transparente.
@@ -134,10 +134,9 @@
 
 ## Grupo da semana
 
-Grupo 2
-Isabel Souza
-Isabella Sanchis
-Isadora Araujo
-José Fagundes
-Nathallye Tavares
-Tifane Sousa
+- Isabel Souza
+- Isabella Sanchis
+- Isadora Araujo
+- José Fagundes
+- Nathallye Tavares
+- Tifane Sousa

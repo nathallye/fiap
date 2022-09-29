@@ -111,10 +111,10 @@
 
 ## Grupo da Semana
 
-Camis
-Gabriel
-Gustavo
-Íris
-Miguel
-Milena
-Nathallye
+- Camis
+- Gabriel
+- Gustavo
+- Íris
+- Miguel
+- Milena
+- Nathallye
