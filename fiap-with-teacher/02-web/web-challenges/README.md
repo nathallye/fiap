@@ -3,4 +3,6 @@ Studies on Programming Logic with TypeScript, HTML5, CC3, JavaScript, Node.js an
     
 - ### [WEB Challenges](README.md)
     - #### [Page Mastercard](01-mastercard/README.md)
+    - #### [Registration](02-registration/README.md)
+    
 
