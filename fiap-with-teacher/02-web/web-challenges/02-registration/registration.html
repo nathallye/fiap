@@ -17,7 +17,8 @@
         <label for="name">
           Nome*:
           <input type="text" name="name" id="name" required placeholder="Digite o nome"
-             />
+            oninvalid="this.setCustomValidity('preencha o campo nome')"
+            oninput="this.setCustomValidity('')" />
         </label>
 
         <label for="email">
