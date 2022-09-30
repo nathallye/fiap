@@ -21,6 +21,8 @@ Studies on Programming Logic with TypeScript, HTML5, CC3, JavaScript, Node.js an
     - #### [Day03](02-web/day02/README.md)
     - #### [Day04](02-web/day04/README.md)
     - #### [Day05](02-web/day05/README.md)
+    - #### [Day06](02-web/day06/README.md)
+    - #### [Day07](02-web/day07/README.md)
     
     - ### [WEB Challenges](02-web/web-challenges/README.md)
       - #### [Page Mastercard](02-web/web-challenges/01-mastercard/README.md)
