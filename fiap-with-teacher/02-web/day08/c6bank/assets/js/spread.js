@@ -56,29 +56,5 @@ elBody.style.height = "100%";
 
 elBody.addEventListener("mouseover", (event) => {
   elBody.style.backgroundColor = "#d4d4d4";
-  console.log("Executou o evento");
+  // console.log("Executou o evento");
 });
-
-// Desafio: a cada 4s trocar o h1 para uma frase do array frases
-// rebeca
-// camilla
-// george
-// daphyne
-
-// sintaxe: setINterval(() => {}, tempo)
-// changeFrase("h1", frases, 4);
-
-const phrases = ["A vida é bela", "A vida é curta", "A vida é uma dádiva"];
-
-changePhrase = function (phrase) {
-  document.querySelector("h1").innerHTML = phrase;
-}
-
-const clock = () => {
-  const phrase = phrases;
-  changePhrase(phrase);
-  console.log("trocando frase...");
-}
-
-setInterval(clock, 4000);
-
