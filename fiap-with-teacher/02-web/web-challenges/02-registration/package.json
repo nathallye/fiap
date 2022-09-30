@@ -1,0 +1,13 @@
+{
+  "name": "registration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch ./assets/scss/:./assets/css --style compressed --no-source-map",
+    "git": "git add --all && git commit -m\"web - day06\" && git push origin master && echo \"Concluid\" && npm run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

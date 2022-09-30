@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <div class="banner">
+
+    <div class="container-registration">
+      <form class="form-registration" method="post">
+        <p>Faça seu cadastro</p>
+
+        <label for="name">
+          Nome*:
+          <input type="text" name="name" id="name" required placeholder="Digite o nome"
+             />
+        </label>
+
+        <label for="email">
+          E-mail*:
+          <input type="email" name="email" id="email" required placeholder="Digite o e-mail"
+            />
+        </label>
+
+        <label for="password">
+          Senha*:
+          <input type="password" name="password" id="password" required placeholder="Digite a senha"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="A senha deve conter ao menos uma letra minúscula, uma letra maiúscula, um número e pelo menos 8 caracteres" />
+        </label>
+
+        <label for="password">
+          Confirme a Senha*:
+          <input type="password" name="password" id="password" required placeholder="Confirme a senha"
+            />
+        </label>
+
+        <button class="button" type="submit">continuar</button>
+      </form>
+    </div>
+
+  </div>
+
+</body>
+</html>
