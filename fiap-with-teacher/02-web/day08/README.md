@@ -6,12 +6,12 @@
   - [x] Conteúdo semântico
   - [x] Estrutura HTML
     - [x] Elemento de linha
-      - [x] <a>
-      - [x] <span>
+      - [x] `<a>`
+      - [x] `<span>`
     - [x] Elemento de bloco
-      - [x] <h1>
-      - [x] <div>
-      - [x] <p>
+      - [x] `<h1>`
+      - [x] `<div>`
+      - [x] `<p>`
   - [x] Propriedades CSS
     - [x] especificidade
       - [x] body > header > nav
