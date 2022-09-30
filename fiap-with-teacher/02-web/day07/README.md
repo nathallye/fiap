@@ -104,9 +104,9 @@
 
 ## Conteúdo prova
 
-[ ] Elementos Semânticos do HTML5 - SEO
-[ ] Principais propriedades do CSS3
-[ ] Funções JavaScript
+- [ ] Elementos Semânticos do HTML5 - SEO
+- [ ] Principais propriedades do CSS3
+- [ ] Funções JavaScript
 
 
 ## Grupo da Semana
