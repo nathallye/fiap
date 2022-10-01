@@ -6,18 +6,14 @@
 
 const phrases = ["A vida é bela", "A vida é curta", "A vida é uma dádiva", "Camarão que dorme a onda leva"];
 
-const changePhrase = (phrase) => {
-  document.querySelector("h1").innerHTML = phrase;
-}
-
 let counter = 0;
 
-const clock = () => {
+const changePhrase = () => {
   const phrase = phrases[counter];
-  changePhrase(phrase);
+  document.querySelector("h1").innerHTML = phrase;
   counter +=1;
   if (counter >= phrases.length) counter = 0;
   // console.log("trocando frase...");
 }
 
-setInterval(clock, 4000);
+setInterval(changePhrase, 4000);
