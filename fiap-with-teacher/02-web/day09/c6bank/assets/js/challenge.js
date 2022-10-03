@@ -17,18 +17,3 @@ const changePhrase = () => {
 }
 
 setInterval(changePhrase, 4000);
-
-// resolução do professor
-const frases = ["A vida é bela", "A vida é curta", "A vida é uma dádiva"];
-
-const mudaFrase = (alvo, texto, tempo) => {
-  //const frase = frases[Math.floor(Math.random() * frases.length)];
-  //mudaTitulo2("h3", frase);
-  let total = 2;
-  setInterval(() => {
-    document.querySelector(alvo).innerHTML =
-      texto[total >= texto.length - 1 ? (total = 0) : (total += 1)];
-  }, tempo * 1000);
-};
-
-mudaFrase("h1", frases, 4);
