@@ -3,6 +3,8 @@
 ## Aula 9(03/10/2022)
 
 - [x] **Resolução desafio aula passada:** a cada 4s trocar o h1 para uma frase do array frases.
+  - [x] Arquivos `challenge.html` e `assets/js/challenge.js`.
+
   - [x] Minha resolução:
 
     ``` JS
@@ -40,6 +42,7 @@
     ```
 
 - [x] **Array**
+  - [x] Arquivos `array.html` e `assets/js/array.js`.
 
   -[x] Criando um Array:
 

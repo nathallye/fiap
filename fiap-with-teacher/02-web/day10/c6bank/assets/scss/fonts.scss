@@ -1,0 +1,19 @@
+// Nesse arquivo iremos criar as fontes necessárias para o site.
+
+@font-face { // Todo arroba no CSS é uma diretiva, ou seja, algo que muda o comportamento do CSS.
+  font-family: "Open Sans"; // quando a familia da fonte Open Sans com o peso(font-weight) regular for chamada
+  src: url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype"); // ele vai buscar essa fonte nessa url e seu formato é ttf:truetype
+  font-weight: regular; // peso regular
+}
+
+@font-face { // Todo arroba no CSS é uma diretiva, ou seja, algo que muda o comportamento do CSS.
+  font-family: "Open Sans"; // quando a familia da fonte Open Sans com o peso(font-weight) 300 for chamada
+  src: url("../fonts/OpenSans/OpenSans-Light.ttf") format("truetype"); // ele vai buscar essa fonte nessa url e seu formato é ttf:truetype
+  font-weight: 300; // peso 300
+}
+
+@font-face { // Todo arroba no CSS é uma diretiva, ou seja, algo que muda o comportamento do CSS.
+  font-family: "Open Sans"; // quando a familia da fonte Open Sans com o peso(font-weight) bold(negrito) for chamada
+  src: url("../fonts/OpenSans/OpenSans-Bold.ttf") format("truetype"); // ele vai buscar essa fonte nessa url e seu formato é ttf:truetype
+  font-weight: bold; // peso bold
+}
