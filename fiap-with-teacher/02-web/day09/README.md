@@ -182,7 +182,7 @@
         vehicles.forEach((value, key) => {
           carsDOM.innerHTML += `<option value="${key}">${value}</option>`;
         });
-      ```
+        ```
 
     - [x] map, filter, reduce, find, findIndex, search, sort, reverse, split, join, substring
 
