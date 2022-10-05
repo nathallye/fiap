@@ -46,6 +46,9 @@
       </html>
       ```
 
+      - [x] Site para baixarmos os icons em svg: https://fonts.google.com/icons
+
+
   - [x] `assets/scss/tooltip.scss`
     - [x] No arquivo scss iremos importar o `reset.scss` e posicionar o svg(#tooltip) fixado 5% da direita e 5% do topo; e quando colocarmos o mouse encima(hover) desse elemento irá aparecer um cursor ponteira:
 
