@@ -95,9 +95,7 @@
       <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
       ```
 
-  - [x]
-  - [x]
-
+- [x] Colocando nosso site no github pages https://pages.github.com/
 
 
 ## Próxima aula
