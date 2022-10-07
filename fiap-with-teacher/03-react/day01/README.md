@@ -107,12 +107,7 @@
       };
       ```
 
-- [ ] Instalar e configurar o React com NextJS
-- [ ] Componentes
-- [ ] Composição de Componentes
-- [ ] Props e State
-
-
 ## Próxima aula
 
-- [ ]
+- [ ] Composição de Componentes
+- [ ] Props e State
