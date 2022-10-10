@@ -132,3 +132,15 @@ console.log(celticsFind, "Find");
 // RETORNO =>
 // Raptors 'Find'
 
+
+// -------------------------------------------
+
+const fruits = ["Apple", "Banana", "Kiwi"];
+let x = fruits.shift(1, 2);
+
+console.log("fruits", fruits);
+
+const fruits2 = ["Apple", "Banana", "Kiwi"];
+let y = fruits2.splice(1, 2);
+
+console.log("fruits 2", fruits2);
