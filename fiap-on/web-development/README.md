@@ -16,7 +16,6 @@ Nas `décadas de 1970 e 1980`, essa rede mundial de computadores foi `utilizada 
 
 Mas foi na `década de 1990 que a Internet foi disponibilizada para a população em geral`. Nesse ano, o físico  britânico `Timothy John Berners-Lee desenvolveu a World Wide Web(www)` que possibilita a utilização de interface gráfica e a criação de sites com a linguagem HTML e a sua transferência com o protocolo  HTTP `permitindo navegar de um site a outro, ou de uma página a outra`.
 
-
 ## Servidores Web
 
 ### TCP/IP
@@ -33,13 +32,11 @@ A `arquitetura TCP/IP surgiu em 1975 na rede Arpanet`. A arquitetura TCP/IP é `
 
   4. **Camada de interface:** A tarefa da interface é receber e enviar pacotes pela rede.
 
-
 Em uma rede TCP/IP `cada equipamento conectado à rede deve possuir um endereço único, capaz de identificá-lo`. Esses endereços, chamados de endereços `IP`, permitema entrega das informações aos seus destinos de forma correta e eficiente. Formado por quatro números que vão de 0 a 255.
 
 Exemplo de um endereço IP: 128.32.99.5.
 
 Cada equipamento conectado à internet deve possuir um endereço IP para ser encontrado na rede.
-
 
 ### Domínios
 
