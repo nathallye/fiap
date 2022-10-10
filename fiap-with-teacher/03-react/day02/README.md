@@ -6,7 +6,9 @@
   - [x] Antigamente tinhamos somente componentes estáticos - Usados para construir uma tela
     - [x] `Componente baseado em Classe/Programação Orientada a Objetos`
       - [x] Antes da versão 16.8
-        // imagem
+        
+        ![image](https://user-images.githubusercontent.com/86172286/194931905-44aa6cfc-2b22-4713-a8ab-a418050079d5.png)
+        
         - [x] `componentDidMount` é executado na primeira vez que entrou na página
         - [x] `componentDidUpdate` quando aplicamos um filtro, por exemplo, na amazon quando buscamos por nome de um produto
         - [x] `componentWillUnmount` antes de fecharmos a página podemos executar algo, exemplo um pop-up com uma pergunta tem certeza?
@@ -14,7 +16,9 @@
   - [x] Hoje em dia podemos trabalhar com com componentes que gerenciam estado - Para armazenar informação e gerar conteúdo com estado
     - [x] `Componente Funcional`
       - [x] Hooks - Versão 16.8 do React
-        // imagem
+        
+        ![image](https://user-images.githubusercontent.com/86172286/194931936-ad46919b-5b4b-4455-868e-00b971ec245c.png)
+        
         - [x] Componente de Classe X Componente Funcional
           - [x] state + setState(...) => `useState(...)`
           - [x] componentDidMount() => `useEffect(...)`s
