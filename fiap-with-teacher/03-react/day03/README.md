@@ -9,9 +9,9 @@
 
   - [x] Um sistema em react - é igual uma receita de bolo tempos etapas que precisamos seguir para o bolo ficar pronto. Por isso, vamos desmembrar os componentes `Input` e `Button` de dentro do `Header` e deixar o `Header` com a única responsabilidade de ser o cabeçalho da página(princípio da responsabilidade única).
 
-  - [x] Props - Passamos como parâmetro para dentro de um componente. É abreviação para propriedade e é um valor somente leitura.
+  - [x] `Props` - Passamos como parâmetro para dentro de um componente. É abreviação para propriedade e é um valor somente leitura.
 
-  - [x] State - Para armazenar valor.
+  - [x] `State` - Para armazenar valor.
     - [x] Sempre que vamos trabalhar com o state para armazenar valores, temos os getters(pegar) & setters(alterar).
 
     ``` TSX
@@ -69,8 +69,6 @@
           counter++;
         }, [counter]) // a função callback só vai ser excutada quando o counter mudar(DependencyList)
         ```
-
-      - [x]
 
 ## Próxima aula
 
