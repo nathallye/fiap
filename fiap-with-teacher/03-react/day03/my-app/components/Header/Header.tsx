@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 // import styles from "../../styles/Header.module.css";
 import { css } from "@emotion/css";
 import styled from "@emotion/styled";
+
+import Input from "../Form/Input";
+import Button from "../Form/Button";
 
 // criando um componente estilizado com styled component
 const HeaderPage = styled.header`
@@ -14,42 +17,17 @@ const HeaderPage = styled.header`
   padding: 0 10%;
 `
 
-const Input = styled.input`
-  backgroun-color: #fff;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
-
-  border-radius: 10px;
-  border: none;
-  outline-color: orange;
-
-  width: 200px;
-  height: 25px;
-  padding-left: 10px;
-  line-height: 30px;
-`
-
-const Button = styled.button`
-  background-color: transparent;
-
-  border: none;
-
-  margin-left: 10px;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 30px;
-
-  &:hover {
-    background-color: #ddd;
-    cursor: pointer;
-  }
-`
-
 type HeaderProps = {
   menu?: Array<string>;
   pesquisar?: string;
+  name?: string;
 }
 
 export default function Header(props: HeaderProps) {
+
+  const [userAuth, setUserAuth] = useState<boolean>(true); // o tipo de valor vai ser booleano e o valor inicial é false
+  const [nameUser, setNameUser] = useState<string | undefined>(props.name);  // o tipo de valor vai ser booleano ou undefined(quando não for passado) e o valor inicial é o valor passado via props para name
+
   return (
     // <header className={styles.menuSite}> // - utilizando CSS modules
     <HeaderPage>
@@ -74,10 +52,14 @@ export default function Header(props: HeaderProps) {
         </ul>
       </nav>
 
-      <form>
-        <Input placeholder="Digite aqui" />
+      {userAuth && (<div>
+        <span>Seja bem vindo {nameUser ? nameUser : "Visitante"}</span>
+      </div>)}
+
+      <div>
+        <Input type="text" placeholder="Digite aqui" />
         <Button>{props.pesquisar? props.pesquisar : "Search"}</Button>
-      </form>
+      </div>
     </HeaderPage>
     // </header>
   )
