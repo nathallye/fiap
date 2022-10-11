@@ -3,7 +3,9 @@ Studies on Programming Logic with TypeScript, HTML5, CC3, JavaScript, Node.js an
 
 - ## [FIAP-ON: Asynchronous Content](fiap-on/README.md)
   - ### [Introdução ao Desenvolvimento Web](fiap-on/web-development/README.md)
-  - ### [Git & GitHub](fiap-on/git-github/README.md)
+  - ### [HTML5](fiap-on/html5-start/README.md)
+  - ### [CSS3](fiap-on/css3/README.md)
+  - ### [Git & GitHub](fiap-on/fiap-on/git-github/README.md)
   - ### [Metodologias Ágeis](fiap-on/agil-methodologies/README.md)
 
 - ## [FIAP with teacher: Synchronous Content](fiap-with-teacher/README.md)
