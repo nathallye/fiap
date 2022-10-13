@@ -54,7 +54,7 @@
 
   - [x] **Box-Model**
     - [x] Camadas: margin, border, padding e content
-    - [x] Lados: top, right, bottom left
+    - [x] Lados: top, right, bottom, left
 
   - [x] **Imagens responsivas**
     - [x] @media
