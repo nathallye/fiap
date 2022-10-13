@@ -58,3 +58,9 @@ Em  que: `var1, var2...` são variáveis ou objetos que se deseja exportar e as 
 Em  que: `[var]` é o nome de como a variável exportada como elemento principal será importada e `var1, var2,...` são os nomes das  outras variáveis exportadas do código externo que devem ser importadas no código local. Dessa forma, teremos g = 10 e y = “um texto”.
 Note que as variáveis dentro de `{ }` devem ser importadas com o `mesmo nome` em que foram exportadas. Contudo, a variável exportada como `principal` pode ter sua importação com `qualquer nome`.
 
+### 4 Principais funcionalidades do React
+
+- Eventos
+- Props
+- hrefs
+- Estados
