@@ -48,7 +48,8 @@ $(document).ready(function(){ // para garantir que o HTML seja carregado primeir
 
 O que torna o framework jQuery tão prático e simples são os seletores utilizados.
 
-Tratam-se dotrigger()ready(function() {
+``` JS
+$(document).ready(function() {
   $("“#botao").click(function() {
     $("p").addClass("vermelho") ;
   });
