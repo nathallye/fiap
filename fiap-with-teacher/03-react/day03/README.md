@@ -62,6 +62,8 @@
         }, []) // DependencyList
         ```
 
+      - [x] Exemplo:
+
         ``` TSX
         let counter = 0;
         useEffect(() => {

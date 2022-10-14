@@ -1,6 +1,6 @@
 # Decola Tech 3
 
-## Aula 4(13/10/2022)
+## Aula 5(14/10/2022)
 
 - [x] React com TypeScript
   - [x] Criação de um novo projeto React no Next.
@@ -58,6 +58,48 @@
     - [x] Instalação do pacote no projeto: `npm install @mui/material @emotion/react @emotion/styled`;
     - [x] Agora conseguimos usar os componentes do MUI no React:
       - [x] `Typography`: Componente para texto formatado.
+
+  - [x] Hooks
+    - [x] `UseState`
+      - [x] Não conseguimos mudar o estado de um componente diretamente a partir da interface, primeiro temos que mudar o estado, para quando esse estado mudar aí sim conseguimos refletir essa mudança na interface gráfica. O caminho é unidirecional, o estado muda e altera a interface gráfica. A interface gráfica não altera o estado(isso acontece indiretamente a partir dos eventos).
+      - [x] State colocamos dentro de uma variável.
+
+        ``` JS
+        const [valor, setValor] = useState<type>("ValorInicial")
+        ```
+
+      - [x] Exemplo:
+
+        ``` TSX
+        const [counter, setCounter] = useState<number | undefined>(0);
+        ```
+
+    - [x] `UseEffect`
+      - [x] Permite executar efeitos colaterais em componentes funcionais
+        - [x] Ele é executado a primeira vez que a página é carregada(ou seja, ele será executado pelo menos uma vez);
+        - [x] Ele é executado sempre que qualquer alteração acontece;
+        - [x] Ele é executado sempre que qualquer elemento é destruído.
+
+      - [x] Sintaxe: useEffect(function, array);
+
+        ``` TSX
+        useEffect(() => { // function callback, que será chamada sempre que o number(number é o "DependencyList" - segundo parametro passado para a função) modificar
+        // EffectCallback
+        }, []) // DependencyList
+        ```
+
+      - [x] Exemplo:
+
+        ``` TSX
+        useEffect(() => {
+          if(counter == 0) {
+            document.title = `Executando useEffect a primeira vez ${counter}`;
+          } else {
+            document.title = `Executando useEffect a cada alteração ${counter}`;
+          }
+          console.log(`Executando useEffect a cada alteração ${counter}`);
+        }, [counter]);
+        ```
 
 ## Próxima aula
 
