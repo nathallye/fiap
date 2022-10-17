@@ -101,6 +101,9 @@
         }, [counter]);
         ```
 
+    - [x] Refatorando o código, deixando o código limpo(SOLID)
+      - [x] Vamos tirar o Alert, Copyright e o Snackbar do login.tsx e vamos criar componentes para cada um desses elementos.
+
 ## Próxima aula
 
 - [ ]
