@@ -8,6 +8,9 @@
 
     - [x] Caminho de conhecimento do Node.js:
       - [x] Conhecer a extrutura interna
+        
+        ![image](https://user-images.githubusercontent.com/86172286/196953179-07daae4a-8717-4fef-830f-5bb545870550.png)
+
         - [x] `V8`
           - [x] Responsável pela `análise léxica`: também conhecida como scanner ou leitura é a primeira fase de um processo de compilação e sua função é fazer a leitura do programa fonte, caractere a caractere, agrupar os caracteres em lexemas e produzir uma sequência de símbolos léxicos conhecidos como tokens.
           - [x] Responsável pela `análise sintática`: verfica se não há erro de sintaxe.
@@ -15,6 +18,8 @@
 
         - [x] `LibUV`
           - [x]
+          
+          ![image](https://user-images.githubusercontent.com/86172286/196953236-b76a3f9b-a3f3-4aa3-9544-bf4ecd27c3ee.png)
 
       - [x] Conhecer a API Nativas do Nodejs
       - [x] Conhecer a API Externa
