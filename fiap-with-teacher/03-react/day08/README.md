@@ -60,7 +60,7 @@
       - [x] `Typography`: Componente para texto formatado.
 
   - [x] Hooks
-    - [x] `UseState`
+    - [x] `useState`
       - [x] Não conseguimos mudar o estado de um componente diretamente a partir da interface, primeiro temos que mudar o estado, para quando esse estado mudar aí sim conseguimos refletir essa mudança na interface gráfica. O caminho é unidirecional, o estado muda e altera a interface gráfica. A interface gráfica não altera o estado(isso acontece indiretamente a partir dos eventos).
       - [x] State colocamos dentro de uma variável.
 
@@ -74,7 +74,7 @@
         const [counter, setCounter] = useState<number | undefined>(0);
         ```
 
-    - [x] `UseEffect`
+    - [x] `useEffect`
       - [x] Permite executar efeitos colaterais em componentes funcionais
         - [x] Ele é executado a primeira vez que a página é carregada(ou seja, ele será executado pelo menos uma vez);
         - [x] Ele é executado sempre que qualquer alteração acontece;
@@ -147,3 +147,4 @@
 ## Próxima aula
 
 - [ ]
+

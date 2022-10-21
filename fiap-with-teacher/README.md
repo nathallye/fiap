@@ -26,6 +26,9 @@ Studies on Programming Logic with TypeScript, HTML5, CC3, JavaScript, Node.js an
     - #### [Day08](02-web/day08/README.md)
     - #### [Day09](02-web/day09/README.md)
     - #### [Day10](02-web/day10/README.md)
+    - #### [Day11](02-web/day11/README.md)
+    - #### [Day12](02-web/day12/README.md)
+
 
     - ### [WEB Challenges](02-web/web-challenges/README.md)
       - #### [Page Mastercard](02-web/web-challenges/01-mastercard/README.md)
@@ -36,9 +39,11 @@ Studies on Programming Logic with TypeScript, HTML5, CC3, JavaScript, Node.js an
     - #### [Day02](03-react/day02/README.md)
     - #### [Day03](03-react/day03/README.md)
     - #### [Day04](03-react/day04/README.md)
+    - #### [Day05](03-react/day05/README.md)
+    - #### [Day06](03-react/day06/README.md)
+    - #### [Day07](03-react/day07/README.md)
+    - #### [Day08](03-react/day08/README.md)
 
-  - ### [Node.js](03-node/README.md)
-    - #### [Day01](03-node/day01/README.md)
-    - #### [Day02](03-node/day02/README.md)
-
-
+  - ### [Node.js](04-node/README.md)
+    - #### [Day01](04-node/day01/README.md)
+    - #### [Day02](04-node/day02/README.md)
