@@ -114,6 +114,27 @@
 
 - [x] Endpoint: `get` e `post` nunca colocamos nada importante nessas rotas, pois são as mais acessíveis.
 
+- [x] Uma REST API trabalha com verbos HTTP, e cada verbo representa uma ação:
+  - [x] GET - Todos
+  - [x] GET - 1
+  - [x] POST - Cadastro
+  - [x] PUT/PATCH - alteração
+  - [x] Delete - Exclusão
+
+- [x] Status Code
+  - [x] 20x
+    - [x] 200 - se tudo der certo, o retorno é sempre 200;
+    - [x] 201 - cadastrado com sucesso
+    - [x] 206 - acesso a conteúdos de stream, deu certo mais tem mais coisa
+
+  - [x] 50x
+    - [x] 500 - Internal Server Error - O servidor encontrou uma situação que não sabe como lidar.
+    - [x] 503 - Service Unavailable - O servidor não está pronto para lidar com a solicitação. Causas comuns são um servidor que está inativo para manutenção ou que está sobrecarregado. Observe que, juntamente com esta resposta, uma página amigável explicando o problema deve ser enviada.
+
+  - [x] 40x
+    - [x] 400 - Bad request - O servidor não pode ou não processará a solicitação devido a algo que é percebido como um erro do cliente (por exemplo, sintaxe de solicitação malformada, estrutura de mensagem de solicitação inválida ou roteamento de solicitação enganoso).
+    - [x] 401 - Unauthorized - Embora o padrão HTTP especifique "não autorizado", semanticamente essa resposta significa "não autenticado". Ou seja, o cliente deve se autenticar para obter a resposta solicitada.
+    - [x] 403 - Forbidden - Cliente não tem direitos de acesso ao conteúdo; ou seja, não é autorizado, então o servidor está se recusando a fornecer o recurso solicitado. Ao contrário 401 Unauthorizedde , a identidade do cliente é conhecida pelo servidor.
 ## Próxima aula
 
 - [ ]
