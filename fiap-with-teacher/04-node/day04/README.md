@@ -1,6 +1,6 @@
 # Decola Tech 3
 
-## Aula 3(24/10/2022)
+## Aula 4(25/10/2022)
 
 - [x] Links úteis:
   - [x] https://docs.google.com/presentation/d/1H7DOMUCUYidIVgq8x5phcSKZ0PpdeKYIn9d4_eP6G7Q/edit#slide=id.g10e8ae1d582_0_37
@@ -64,7 +64,55 @@
 
   - [x] `módulo `-> `controller` -> `service/providers`
 
+  - [x] `Criação de um módulo com nest`:
+
+    - [x] O nome do módulo é sempre no plural exemplo: users, orders, products...
+
+    ```
+    nest g module auth
+                  [module_name]
+    ```
+
+    - [x] Esse comando vai criar uma pasta chamada `auth` e dentro dela um arquivo `auth.module.ts`. E também é criada uma importação do arquivo `app.module.ts`.
+
+      ``` TS
+      import { AuthModule } from './auth/auth.module';
+      ```
+
+      - [x] todos os modules tem que estar importador no `app.module.ts`.
+
+  - [x] `Criação de um controller com nest`:
+
+    ```
+    nest g controller auth
+                     [module_name]
+    ```
+
+    - [x] Esse comando vai na pasta `auth`(ele verifica se já existe e como já existia ele somente altera) e dentro dela cria arquivo `auth.controller.ts`. E também é criada uma importação do arquivo `auth.module.ts`.
+
+  - [x] `Criação de um service com nest`:
+
+    ```
+    nest g service auth
+                  [module_name]
+    ```
+
+    - [x] Esse comando vai na pasta `auth`(ele verifica se já existe e como já existia ele somente altera) e dentro dela cria arquivo `auth.service.ts`. E também é criada uma importação do arquivo `auth.controller.ts`.
+
+  - [x] Ao usuário acesar a rota `http://localhost:3000/auth` o nest vai chamar o `app.module.ts` e ele chama o `app.controller.ts` para redirecionar, se esse controller não entrar o responsável ele vai chamar os `imports`, dos imports ele vai chamar o `auth.module.ts` e ele irá chamar o `auth.controller.ts` e ele vai saber o que fazer, redirecionando para o service adequado.
+
+  - `Criação do module, controller e service de uma vez`:
+
+    ```
+    nest g resource logistics
+                    [module_name]
+    ```
+
 - [x] Instruções sobre como criar uma VM no azure.
+
+- [x] Inversão de `dependência` x `injeção`: Inversão de dependência é uma coisa Injeção é outra.
+
+- [x] Endpoint: `get` e `post` nunca colocamos nada importante nessas rotas, pois são as mais acessíveis.
 
 ## Próxima aula
 
