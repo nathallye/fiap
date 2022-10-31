@@ -1,13 +1,23 @@
 import { HttpException, HttpStatus, Injectable } from "@nestjs/common";
 import { users } from "@prisma/client";
 import { PrismaService } from "../prisma.service";
+import { CreateUserDTO } from "./dto/createUser.dto";
 import { UpdateUserDTO } from "./dto/uptadeUser.dto";
 
 @Injectable()
 export class UsersService {
   constructor(private prisma: PrismaService) {}
 
-  async create(data): Promise<users> {
+  async verifyUserExists(email: string): Promise<boolean> { // método para verificar se o usuário existe
+    const user = await this.prisma.users.findUnique({
+      where: {
+        email: email
+      }
+    });
+    return user ? true : false;
+  }
+
+  async create(data: CreateUserDTO): Promise<users> {
     // temos dois problemas aqui
     // 1º o email não está sendo verificado se já existe no banco de dados
     // 2° a senha está em formato clear text
@@ -19,13 +29,18 @@ export class UsersService {
     // findUnique é um método do prisma que busca um usuário pelo campo único por exemplo email
     // findFirst é um método do prisma que busca o primeiro registro que encontrar - quando não temos chave primária - mais pesado - porque ele carrega a tabela toda
     const { name, email, password } = data;
-    const user = await this.prisma.users.create({
-      data: {
-        name,
-        email,
-        password
-      }
-    });
+    const checkUser = await this.verifyUserExists(email);
+    let user = undefined;
+
+    if (!checkUser) {
+      user = await this.prisma.users.create({
+        data: {
+          name,
+          email,
+          password
+        }
+      });
+    }
 
     if (!user) {
       throw new HttpException(
@@ -36,16 +51,19 @@ export class UsersService {
         HttpStatus.FORBIDDEN,
       );
     }
-
     return user;
   }
 
-  async findAll(): Promise<string> {
-    return "Lista de usuários!";
+  async findAll(): Promise<users[]> {
+    return await this.prisma.users.findMany();
   }
 
-  async findOne(id: number): Promise<string> {
-    return `Usuário ${id}!`;
+  async findOne(id: number): Promise<users> {
+    return await this.prisma.users.findUnique({
+      where: {
+        id: id
+      }
+    });
   }
 
   async update(id: number, req: UpdateUserDTO): Promise<string> {

@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Param, ParseUUIDPipe, Patch, Post } from '@nestjs/common';
+import { Body, Controller, Get, Param, ParseIntPipe, Patch, Post } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { CreateUserDTO } from './dto/createUser.dto';
 import { UpdateUserDTO } from './dto/uptadeUser.dto';
@@ -23,7 +23,7 @@ export class UsersController {
 
   // GET http://localhost:3000/users/1
   @Get(":id")
-  findOne(@Param("id", ParseUUIDPipe) id: number) {
+  findOne(@Param("id", ParseIntPipe) id: number) {
     return this.usersService.findOne(id);
   }
 
@@ -32,7 +32,7 @@ export class UsersController {
   // O PATCH é usado para atualização parcial.
   // PATCH http://localhost:3000/users/1
   @Patch(":id")
-  update(@Param("id", ParseUUIDPipe) id: number, @Body() req: UpdateUserDTO) {
+  update(@Param("id", ParseIntPipe) id: number, @Body() req: UpdateUserDTO) {
     return this.usersService.update(id, req);
   }
 }
