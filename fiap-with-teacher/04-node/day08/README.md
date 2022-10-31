@@ -1,6 +1,6 @@
 # Decola Tech 3
 
-## Aula 7(28/10/2022)
+## Aula 8(31/10/2022)
 
 - [x] Links úteis:
   - [x] https://docs.google.com/presentation/d/1H7DOMUCUYidIVgq8x5phcSKZ0PpdeKYIn9d4_eP6G7Q/edit#slide=id.g10e8ae1d582_0_37
@@ -422,6 +422,16 @@
           constructor(private prisma: PrismaService) {}
 
           async create(data): Promise<users> {
+            // temos dois problemas aqui
+            // 1º o email não está sendo verificado se já existe no banco de dados
+            // 2° a senha está em formato clear text
+
+            // as restrições em banco de dados impedem redundâncias e anomailias (constaints - restrições)
+            // chave primária - impede duplicidade, e obriga o preenchimento, além de ser um índice físico(clustered index)
+
+            // busca para saber se o usuário já existe
+            // findUnique é um método do prisma que busca um usuário pelo campo único por exemplo email
+            // findFirst é um método do prisma que busca o primeiro registro que encontrar - quando não temos chave primária - mais pesado - porque ele carrega a tabela toda
             const { name, email, password } = data;
             const user = await this.prisma.users.create({
               data: {

@@ -294,6 +294,50 @@
     - [x] Estratégia de roda migrations
     - [x] Histórico do banco de dados
 
+  - [x] Banco de dados Comandos
+    - [x] Linux
+      - [x] Acesso ao banco de dados MySql
+
+        ``` SQL
+        mysql -u root -p
+        ```
+
+      - [x] Visualizando os bancos de dados existentes:
+
+        ``` SQL
+        show databases;
+        ```
+
+      - [x] Criando banco de dados:
+
+        ``` SQL
+        create database [database-name];
+        ```
+
+      - [x] "Usando" banco de dados:
+
+        ``` SQL
+        use [database-name]
+        ```
+
+      - [x] Visualizando as colunas da tabela em questão:
+
+        ``` SQL
+        show tables;
+        ```
+
+      - [x] Excluindo tabelas do banco de dados em questão:
+
+        ``` SQL
+        drop table [table-name]
+        ```
+
+      - [x] Visualizando os dados da tabela do banco de dados em questão, em ordem decrescente:
+
+        ``` SQL
+        desc [table-name]
+        ```
+
 ## Próxima aula
 
 - [ ]
