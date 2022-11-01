@@ -1,6 +1,6 @@
 # Decola Tech 3
 
-## Aula 8(31/10/2022)
+## Aula 9(01/11/2022)
 
 - [x] Links úteis:
   - [x] https://docs.google.com/presentation/d/1H7DOMUCUYidIVgq8x5phcSKZ0PpdeKYIn9d4_eP6G7Q/edit#slide=id.g10e8ae1d582_0_37
@@ -598,7 +598,6 @@
         // [...]
       }
       ```
-
 
 ## Próxima aula
 
