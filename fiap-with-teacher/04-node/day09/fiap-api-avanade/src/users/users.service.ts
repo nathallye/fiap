@@ -3,10 +3,29 @@ import { users } from "@prisma/client";
 import { PrismaService } from "../prisma.service";
 import { CreateUserDTO } from "./dto/createUser.dto";
 import { UpdateUserDTO } from "./dto/uptadeUser.dto";
+import * as bcrypt from "bcrypt";
+import { EmailService } from "../email/email.service";
 
 @Injectable()
 export class UsersService {
-  constructor(private prisma: PrismaService) {}
+  constructor(
+    private prisma: PrismaService,
+    private emailService: EmailService
+  ) {}
+
+  async getUserById(id: string): Promise<users> {
+    const user = await this.prisma.users.findUnique({
+      where: {
+        id: Number(id),
+      },
+    });
+
+    if (!user) {
+      throw new HttpException("Usuário não encontrado", HttpStatus.NOT_FOUND);
+    }
+
+    return user;
+  }
 
   async verifyUserExists(email: string): Promise<boolean> { // método para verificar se o usuário existe
     const user = await this.prisma.users.findUnique({
@@ -15,6 +34,13 @@ export class UsersService {
       }
     });
     return user ? true : false;
+  }
+
+  async crypto(password: string): Promise<string> {
+    const salt = await bcrypt.genSalt();
+    const hashedPassword = await bcrypt.hash(password, salt);
+
+    return hashedPassword;
   }
 
   async create(data: CreateUserDTO): Promise<users> {
@@ -37,9 +63,13 @@ export class UsersService {
         data: {
           name,
           email,
-          password
+          password: await this.crypto(password)
         }
       });
+      // enviando e-mail
+      if (await this.emailService.sendEmail(email, `Bem vindo ao sistema ${name}`, `${name}, você se cadastrou no site FIAP Avanade confirme seu acesso no link abaixo: ...`, {})) {
+        console.log("E-mail enviado com sucesso!");
+      }
     }
 
     if (!user) {
@@ -48,7 +78,7 @@ export class UsersService {
           status: HttpStatus.FORBIDDEN,
           message: "Erro ao criar usuário!",
         },
-        HttpStatus.FORBIDDEN,
+        HttpStatus.FORBIDDEN
       );
     }
     return user;
@@ -66,7 +96,44 @@ export class UsersService {
     });
   }
 
-  async update(id: number, req: UpdateUserDTO): Promise<string> {
-    return `Usuário ${id} atualizado com sucesso!`;
+  async update(id: string, req) {
+    //carregue os dados do usuário cujo id foi informado.
+    const user = await this.getUserById(id);
+    //extraindo as novas informações para alterar o usuário.
+
+    const { name, email, password } = req;
+
+    const updatedUser = await this.prisma.users.update({
+      where: {
+        id: Number(id),
+      },
+      data: {
+        name: name ? name : user.name,
+        email: email ? email : user.email,
+        password: password ? password : user.password,
+      },
+    });
+
+    if (!updatedUser) {
+      throw new HttpException("Erro ao atualizar usuário", HttpStatus.BAD_REQUEST);
+    }
+    return { msg: `Usuário ${updatedUser.name} atualizado com sucesso!` };
+  }
+
+
+  async remove(id: string) {
+    const user = await this.getUserById(id);
+
+    const deletedUser = await this.prisma.users.delete({
+      where: {
+        id: Number(id)
+      },
+    });
+
+    if (!deletedUser) {
+      throw new HttpException("Erro ao deletar usuário", HttpStatus.BAD_REQUEST);
+    }
+
+    return { msg: `Usuário ${user.name} Excluído com sucesso!` };
   }
 }

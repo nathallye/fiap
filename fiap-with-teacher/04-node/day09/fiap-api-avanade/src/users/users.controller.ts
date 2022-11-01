@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Param, ParseIntPipe, Patch, Post } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, ParseIntPipe, Patch, Post } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { CreateUserDTO } from './dto/createUser.dto';
 import { UpdateUserDTO } from './dto/uptadeUser.dto';
@@ -32,7 +32,12 @@ export class UsersController {
   // O PATCH é usado para atualização parcial.
   // PATCH http://localhost:3000/users/1
   @Patch(":id")
-  update(@Param("id", ParseIntPipe) id: number, @Body() req: UpdateUserDTO) {
+  update(@Param("id", ParseIntPipe) id: string, @Body() req: UpdateUserDTO) {
     return this.usersService.update(id, req);
+  }
+
+  @Delete(":id")
+  remove(@Param("id", ParseIntPipe) id: string)  {
+    return this.usersService.remove(id);
   }
 }

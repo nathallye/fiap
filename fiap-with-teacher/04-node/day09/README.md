@@ -599,6 +599,99 @@
       }
       ```
 
+    - [x] Configuração da VM OS Ubuntu
+      - [x] Comandos no Linux
+        - [x] Buscar últimos comandos executados
+
+          ```
+          $ history | grey ssh
+                           [command]
+          ```
+
+        - [x] Verificar o que esta rodando na máquina:
+
+          ```
+          netstat
+          ```
+
+      - [x] Seguindo o tutorial da Digital Ocean para configurar um aplicativo Node.js para produção no Ubuntu
+        - [x] https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-20-04
+
+        - [x] Instalando o NodeJS
+
+          ```
+          $ curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - &&\
+          sudo apt-get install -y nodejs
+          ```
+
+        - [x] Para que alguns pacotes `npm` funcionem (aqueles que exigem compilar código do código-fonte, por exemplo), precisamos instalar o pacote `build-essential`:
+
+          ```
+          $ sudo apt install build-essential
+          ```
+
+        - [x] Criar a pasta do servidor web
+
+          ```
+          /var/www
+          ```
+
+        - [x] Instalar o PM2
+
+          ```
+          $ sudo npm install pm2@latest -g
+          ```
+
+        - [x] Instalar o nginx e configurar como um servidor proxy reverso
+
+          - [x] Instalação:
+
+            ```
+            $ sudo apt update
+            $ sudo apt install nginx
+            $ sudo ufw app list
+            $ sudo ufw allow 'Nginx HTTP'
+            $ sudo ufw status
+            ```
+
+          - [x] Configuração:
+
+            Acessando o diretório e abrindo com o editor nano:
+
+              ```
+              $ cd /etc/nginx/sites-available
+              $ sudo nano default
+              ```
+
+            Abrindo e substituindo o conteúdo desse bloco pela configuração a seguir:
+
+              ```
+              server {
+              ...
+                location / {
+                  proxy_pass http://localhost:3000;
+                  proxy_http_version 1.1;
+                  proxy_set_header Upgrade $http_upgrade;
+                  proxy_set_header Connection 'upgrade';
+                  proxy_set_header Host $host;
+                  proxy_cache_bypass $http_upgrade;
+                }
+              ...
+              }
+              ```
+
+            Quando terminarmos de adicionar os blocos de localização para os aplicativos, devemos salvar o arquivo e sair do editor:
+
+              ```
+              $ sudo nginx -t
+              ```
+
+            Reiniciando o Nginx:
+
+              ```
+              sudo systemctl restart nginx
+              ```
+
 ## Próxima aula
 
 - [ ]
