@@ -1,19 +1,20 @@
 import React, { FormEvent, useEffect, useState } from "react";
 
-import { 
-  Typography, 
-  Container, 
-  CssBaseline, 
-  Box, 
-  TextField, 
-  FormControlLabel, 
-  Checkbox, 
+import {
+  Typography,
+  Container,
+  CssBaseline,
+  Box,
+  TextField,
+  FormControlLabel,
+  Checkbox,
   Button
 } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 import Copyright from "../components/utils/Copyright";
 import Snackbar from "../components/utils/Snackbar";
+import axios from "axios";
 
 const theme = createTheme();
 
@@ -29,7 +30,7 @@ export default function LoginPage() {
   const [email, setEmail] = useState<string | undefined | null | FormDataEntryValue>("");
   const [password, setPassword] = useState<undefined | undefined | null | FormDataEntryValue>("");
 
-  /* 
+  /*
   useEffect(() => {
     if(counter == 0) {
       document.title = `Executando useEffect a primeira vez ${counter}`;
@@ -53,14 +54,25 @@ export default function LoginPage() {
       setErrorMessage("");
       // enviar o formulário para o servidor...
       // deu certo... vamos cruar o snackbar...
-      setOpen(true);
+      // setOpen(true);
+      axios.post("http://localhost:3000/auth/login", {
+        login: email,
+        password
+      }).then((response) => {
+        console.log(response);
+        if(response.status == 200){
+          setOpen(true);
+        }
+      }).catch((error)=>{
+          console.log(error);
+      })
     }
   }, [password]);
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    
+
     console.log(data.get("email"));
     console.log(data.get("password"));
 
@@ -79,20 +91,20 @@ export default function LoginPage() {
           </Typography>
           <Box component="form" onSubmit={handleSubmit}>
 
-            {/* 
+            {/*
             <button onClick={() => setCounter(counter + 1)}>Mudar o contador</button>
             {`O state counter vale: ${counter}`}<br />
             <button onClick={() => setName("Nathallye")}>Mudar o nome</button>
-            {`O state name é: ${name}`} 
+            {`O state name é: ${name}`}
             */}
-            
-            <TextField margin="normal" required fullWidth id="email" label="Digite o e-mail" name="email" 
+
+            <TextField margin="normal" required fullWidth id="email" label="Digite o e-mail" name="email"
               autoComplete="email" autoFocus />
-            <TextField margin="normal" required fullWidth id="password" label="Digite a senha" name="password" 
+            <TextField margin="normal" required fullWidth id="password" label="Digite a senha" name="password"
               autoComplete="current-password" autoFocus />
             <FormControlLabel control={<Checkbox value="remember" color="primary" />} label="Lembrar de mim" />
             <Button type="submit" fullWidth variant="contained" sx={{mt: 3, mb: 2}}>Entrar</Button>
-            {error && 
+            {error &&
               <Typography color="error">{errorMessage}</Typography>
             }
           </Box>
