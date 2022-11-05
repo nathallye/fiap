@@ -52,4 +52,9 @@ Studies on Programming Logic with TypeScript, HTML5, CC3, JavaScript, Node.js an
     - #### [Day05](04-node/day05/README.md)
     - #### [Day06](04-node/day06/README.md)
     - #### [Day07](04-node/day07/README.md)
+    - #### [Day08](04-node/day08/README.md)
+    - #### [Day09](04-node/day09/README.md)
+    - #### [Day10](04-node/day10/README.md)
+    - #### [Day11](04-node/day11/README.md)
+
 
